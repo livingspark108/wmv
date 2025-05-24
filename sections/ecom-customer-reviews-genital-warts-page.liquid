@@ -1,0 +1,287 @@
+{% comment %}
+ EComposer (https://ecomposer.io)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from EComposer
+ At 2025-02-05 06:19:31
+ {% endcomment %} 
+ 
+ {% assign ecom_root_url = routes.root_url %}
+ {% if ecom_root_url != '/'%}
+ {% assign ecom_root_url = routes.root_url | append: '/' %}
+ {% endif %}
+ <link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /><noscript><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /></noscript>
+{%capture section_id %}ecom-customer-reviews-genital-warts-page{% endcapture%}{% if section and section_id == section.id and headless == true %}
+{{ content_for_header }}
+{% render 'ecom_header', ECOM_THEME: true %}{% endif %}<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=EB+Garamond:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+{{'ecom-6607b2c68d8b2f374f0f7bfb.css' | asset_url | stylesheet_tag }}
+<script src="{{'ecom-6607b2c68d8b2f374f0f7bfb.js' | asset_url }}" defer="defer"></script>
+<script type="text/javascript" class="ecom-page-info">
+ window.EComposer = window.EComposer || {};
+ window.EComposer.TEMPLATE_ID="6607b2c68d8b2f374f0f7bfb";
+ window.EComposer.PAGE = {"template_id":"6607b2c68d8b2f374f0f7bfb","title":"Customer Reviews - Genital Warts","type":"page","slug":"ecom-customer-reviews-genital-warts","plan_id":4};
+ </script>
+<div class="ecom-builder" id="ecom-customer-reviews-genital-warts"><div class="ecom-sections" data-section-id="{{section.id}}"><section class="ecom-row ecom-core ecom-section ecom-xaj3vt6buy" data-id="ecom-xaj3vt6buy" data-notice-content="" style="z-index: inherit;"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-ga1ptkwbkq"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-uf24lp13kx" data-core-is="block"><div class="ecom-element ecom-base ecom-base__breadcrumbs--wrapper" deep="1">
+ {%- if EComBuilderMode -%}
+ {% capture page_type %}page{% endcapture %}
+ {%- else -%}
+ {%- assign page_type = request.page_type %}
+ {%- endif %}
+ {%- capture icon_parent -%}
+ <span class="ecom-base__breadcrumbs--icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor"><path d="M272.5 5.7C281.4-1.9 294.6-1.9 303.5 5.7L567.5 229.7C577.6 238.3 578.9 253.4 570.3 263.5C561.7 273.6 546.6 274.9 536.5 266.3L512 245.5V432C512 476.2 476.2 512 432 512H144C99.82 512 64 476.2 64 432V245.5L39.53 266.3C29.42 274.9 14.28 273.6 5.7 263.5C-2.876 253.4-1.634 238.3 8.473 229.7L272.5 5.7zM112 204.8V432C112 449.7 126.3 464 144 464H432C449.7 464 464 449.7 464 432V204.8L288 55.47L112 204.8z"></path></svg>
+ </span>
+ 
+ {%- endcapture -%}
+ {%- capture icon_breadcrumbs -%}
+ <span class="ecom-base__breadcrumbs--icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"><path d="M 12.96875 4.28125 L 11.53125 5.71875 L 21.8125 16 L 11.53125 26.28125 L 12.96875 27.71875 L 23.96875 16.71875 L 24.65625 16 L 23.96875 15.28125 Z"></path></svg>
+ </span>
+ 
+ {%- endcapture -%}
+ {%- unless page_type == 'index' or page_type == 'list-collections' or page_type == '404' -%}
+ <nav class="ecom-base__breadcrumbs ecom-flex" role="navigation" aria-label="breadcrumbs">
+ <div class="ecom-base__breadcrumbs__list">
+ {{ icon_parent }}<a class="ecom-base__breadcrumbs__link" href="/">{{ 'sections.ecom-customer-reviews-genital-warts-page.breadcrumbs_home_uf24lp13kx_html' | t }}</a>
+ {%- case page_type -%}
+ {%- when 'page' -%}
+ {{ icon_breadcrumbs }}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="page">Untitled</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+ {%- endif -%}
+ {%- when 'cart' -%}
+ {{ icon_breadcrumbs }}
+ <a class="ecom-base__breadcrumbs__link" href="{{ routes.cart_url }}" aria-current="cart">{{ 'sections.ecom-customer-reviews-genital-warts-page.cart_page_title_uf24lp13kx_html' | t }}</a>
+ {%- when 'product' -%}
+ {%- if collection.url -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {%- else -%}
+ {% for collection in product.collections %}
+ {% if collection.handle == 'all' or collection.handle == 'frontpage' or collection.title == 'All' %}
+ {% continue%}
+ {% else %}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {% break %}
+ {% endif%}
+ {% endfor %}
+ {%- endif -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+ {%- when 'collection' and collection.handle -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + "}}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+ {%- endif -%}
+ {%- when 'blog' -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+ {%- endif -%}
+ {%- when 'article' -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+ {%- endcase -%}
+ </div>
+ </nav>
+ {%- endunless -%}{%- assign page_type = request.page_type %}
+ {%- if page_type == 'index' -%}
+ {{ icon_parent }}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="index">Home</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="/" aria-current="index">Home</a>
+ {%- endif -%}
+ {%- endif -%}
+ </div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section><section class="ecom-row ecom-core ecom-section ecom-r2g5g3tczq" data-id="ecom-r2g5g3tczq" data-notice-content="" style="z-index: inherit;"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-143k8xiu41cm"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-5risu1kxcqo" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-6amyk284p79" data-id="ecom-6amyk284p79" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first ecom-2vzceaykh58"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-9jlj92eevu5" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="2"><h1 class="ecom__heading ecom-db">{{ 'sections.ecom-customer-reviews-genital-warts-page.headingtext_9jlj92eevu5_html' | t }}</h1></div></div> </div></div></div></div> <div class="ecom-column ecom-core core__column--last ecom-dn8o4gy5vgr"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="1"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-j8gc3447xbm" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="2"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-customer-reviews-genital-warts-page.headingtext_j8gc3447xbm_html' | t }}</h2></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-vbwbxnerar" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-wckzop18zpj" data-id="ecom-wckzop18zpj" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first ecom-ftrdqpks07u"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-v2jjnohh02m" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="2"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-customer-reviews-genital-warts-page.headingtext_v2jjnohh02m_html' | t }}</h3></div></div> </div></div></div></div> <div class="ecom-column ecom-core ecom-6hlzeh810yw"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="1"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-qwqlgpjmyv" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-warts" title="Wart &amp; Mole Vanish - Customer Reviews - Warts Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-genital-warts-page.buttoncontent_qwqlgpjmyv_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div></div> <div class="ecom-column ecom-core ecom-lfcsrb71skf"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="2"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-4qb6n5k0wi8" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-genital-warts" title="Wart &amp; Mole Vanish - Customer Reviews - Genital Warts Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-genital-warts-page.buttoncontent_4qb6n5k0wi8_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div></div> <div class="ecom-column ecom-core ecom-jey8zsk0op"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="3"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-zjn2234w1vl" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-moles" title="Wart &amp; Mole Vanish - Customer Reviews - Moles Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-genital-warts-page.buttoncontent_zjn2234w1vl_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div></div> <div class="ecom-column ecom-core ecom-pcif5unbr"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="4"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-gfpwgjxor3n" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-skin-tags" title="Wart &amp; Mole Vanish - Customer Reviews - Skin Tags Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-genital-warts-page.buttoncontent_gfpwgjxor3n_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div></div> <div class="ecom-column ecom-core ecom-ttn64q17r1h"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="5"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-rbo68q7m00g" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-syringoma" title="Wart &amp; Mole Vanish - Customer Reviews - Skin Tags Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-genital-warts-page.buttoncontent_rbo68q7m00g_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div></div> <div class="ecom-column ecom-core core__column--last ecom-j7dqsa7xhlm"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="6"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-opahtry78vj" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-pets-general" title="Wart &amp; Mole Vanish - Customer Reviews - Skin Tags Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-genital-warts-page.buttoncontent_opahtry78vj_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-rn4oboadgrq" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-3s30nmv966k" data-id="ecom-3s30nmv966k" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-18y8e2880yi"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-utl940fw5i" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_utl940fw5i_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-j5zi3xb67o" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_j5zi3xb67o_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-ta8mar185h" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-gxuat4dxi2j" data-id="ecom-gxuat4dxi2j" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-avdjk4m5la"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-dr5wcyx4qcr" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_dr5wcyx4qcr_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-i8gibotry3" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_i8gibotry3_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-cyxckkssxfr" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-az9lzinzb87" data-id="ecom-az9lzinzb87" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-k94lhl3r7m"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-rsko3zb6o78" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_rsko3zb6o78_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-ov2wi24wv8" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_ov2wi24wv8_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-th4r2sql3r8" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-zuhsk0vmod" data-id="ecom-zuhsk0vmod" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-nshm9c6o9nc"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-h9jbszcb4g" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_h9jbszcb4g_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-pifcp0647sb" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_pifcp0647sb_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-sobarh9elfp" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-mu2tw32q0ia" data-id="ecom-mu2tw32q0ia" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-6pcpo5gulls"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-5pj9mxabo53" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">Message: This website seems so unbelievable that I am almost offended. I
+ have a hunch that your product is very ineffective and let’s just say 
+that somebody did have genital warts????? Come on. I am a nurse and it 
+doesn’t take a nurse to know that some herbal product can’t cure that. 
+How do you sleep at night? 12/10/06<br>
+—-RESPONSE—-<br>
+Hi Michelle, Hundreds of thousands of people have used Wart &amp; Mole 
+Vanish to safely and effectively remove their warts, moles and skin 
+tags. Please follow the instructions and important notes at 
+http://www.wartmolevanish.com/product-instructions.html and view the 
+demo for moles at http://www.wartmolevanish.com/product-demo.html And 
+view the photos at http://www.wartmolevanish.com/product-pictures.html 
+Produces Natural Cauterization The cell tissues of warts, moles and 
+other skin disorders are burned by the natural components derived from 
+the herbal extracts found in Wart &amp; Mole Vanish. Produces similar 
+results as Electro-cauterization, but without anesthesia Causes 
+destruction of wart or mole to the root within 20 minutes after a single
+ application (certain types of warts and moles may need more than one 
+application) Dried up lesions fall off in 1-3 weeks Minimally invasive. 
+Unlikely to scar unless scab is disturbed or removed prematurely or 
+unless a secondary infection occurs. Whenever attempting to manipulate 
+or change the dermis one should expect that a blemish or scar may 
+result. In most circumstances the use of the product will result in a 
+minor and temporary blemish that normally fades away within 90 days. 
+Order now at www.pristineherbaltouch.com Thanks! Jamie<br>
+—-FOLLOWUP—-<br>
+1/8/07 The product worked great I have to say. Thank you!
+</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-c0fw203js2t" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_c0fw203js2t_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-jv2eed6mo9" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-ytbjwjeq0w" data-id="ecom-ytbjwjeq0w" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-n5ojlwl2k9h"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-xdm5ma1n2cb" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_xdm5ma1n2cb_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-hviofshmo5s" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_hviofshmo5s_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-o7srordvo4" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-o9h9s1m4kph" data-id="ecom-o9h9s1m4kph" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-az4b2iq1qn5"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-yoigxjh0oc" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_yoigxjh0oc_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-znc7vcvu6ja" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_znc7vcvu6ja_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-o0lsr4m9dl8" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-0n167egh4glq" data-id="ecom-0n167egh4glq" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-u7sukv2yhen"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-m7mi2qwq62" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_m7mi2qwq62_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-qiim5wpf4r" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_qiim5wpf4r_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-jf4buc7s1aq" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-6ae7vn4ypec" data-id="ecom-6ae7vn4ypec" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-j9j2qw0746"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-gwop92dbao" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_gwop92dbao_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-o7dulbf8v" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_o7dulbf8v_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-q6vn8wu8zn" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-x6fep5350ih" data-id="ecom-x6fep5350ih" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-7pnzab95ey6"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-gs9zh9fupoi" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_gs9zh9fupoi_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-vgf5s888xp" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_vgf5s888xp_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-8n5s46ulqbc" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-ipy5h7mekzd" data-id="ecom-ipy5h7mekzd" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-csubl7p5zcv"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-akkhmzmoobe" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_akkhmzmoobe_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-e4hud6z2o8t" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_e4hud6z2o8t_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-lpx74l53uq9" data-core-is="row"><div class="ecom-row ecom-core core__block ecom-flrzoy1nw3j" data-id="ecom-flrzoy1nw3j" data-notice-content="" style="z-index: inherit;"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-551s7fb6kas"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-97xmxb1zmus" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed"><p>GENITAL WART EXPERIENCE</p><p>I am looking at your product and I think this may work for my 1 and only
+ genital wart. I have literally tried everything for about 7-8 months 
+now and absolutely nothing has worked. I must have an extremely stubborn
+ wart or it’s just that those other products don’t work. It is extremely
+ embarrassing to me to have this and all this frustration is making me 
+depressed since nothing seems to work. My question to you is will this 
+product work? It’s not a very big wart, in fact some days you have to 
+look a little harder to see it. Nevertheless it is still there. My other
+ question is if I put your product on, I see that it’s a needle, how can
+ I scratch it without poking it? Would I need to bandage the area since 
+it says not to let the wart touch anything? I first noticed my wart and 
+immediately had it checked out and tried all the alternative methods to 
+the no avail in working for the last 7-8 months now. Anyway enough with 
+that, let me know the answers to my questions. Thanks.</p>
+—-RESPONSE—-<br>
+Hi Eric, yes, this will work, even on stubborn genital warts. We have 
+treated tens of thousands of genital warts clients and have a 98% 
+success rate! You don’t have to use the needle, you can use a tooth pick
+ to scratch the surface of the wart. Apply the cream, it will sting, the
+ wart will turn black, after 20 minutes wipe of the wart with a wet 
+Q-tip. Then apply the cream again to make sure you have killed the 
+roots. Leave on for 20 minutes and then wash of the dried cream. That’s 
+it! It will form a scab that will fall off in about a week and you’re 
+back in business. Call me if you would like any more info 800-395-8401. 
+Thanks! Jamie<br>
+—-FOLLOWUP—-<br>
+Thanks for your quick response. I placed the order about 5 minutes ago 
+now. Wanted to say thanks for the really clear and definitive directions
+ on using your product. I will see that I follow these recommendations 
+to a “T.” I hope I see a result with this as I am putting a lot of faith
+ into this one. I like the idea of you “see” the result immediately (2 
+treatments, like you said, and about an hour later), but wait for the 
+scab to fall off naturally. The only other question I would have is as 
+followed…Do I need to take extra care when showering not to wash it off 
+or put too much pressure on it? That was my only concern on this. Thanks
+ again for your time and input to my specific inquiry. I look forward to
+ this working and submitting a testimonial if all goes well and ending 
+this frustration.<br>
+—-RESPONSE—-<br>
+Hi Eric, You can wash normally, but yes take a little extra care not to knock of the scab. Thanks! Jamie<br>
+—-FOLLOWUP—-<br>
+Jamie,<br>
+I put this on yesterday afternoon and I have to say, it definitely 
+stung, pretty damn bad. It lasted about 10-15 minutes, but not nearly as
+ bad as it was within the first 5 minutes. The worst was I first put it 
+on, almost stung so bad I couldn’t put more on, but I had to suck it up 
+and be a man and keep putting it on to cover the whole wart. I also put 
+it on the second time as you recommended. I never visibly noticed the 
+actual wart fall off, but the area that turned black, and it still is as
+ of this morning (13 hours later), is much bigger than the actual wart 
+was. I don’t know if it’s because that’s how deep the wart’s roots went 
+or what, but it is was very black. It’s black now just not as dark. I 
+hope this is all normal, but I don’t see anything that is a wart, just a
+ much bigger area of blackness than the wart was. I’d rather look at 
+that knowing it will eventually go away than a genital wart. Thanks for 
+all your help and I will be submitting a testimonial for you when all is
+ done and cleared. I did put this on twice as you recommended. It wasn’t
+ as bad the second time around. I think there was a 5 minute period 
+before I put it on the second time. Nevertheless, all seems clear and 
+good to go so far.<br>
+—-REPONSE—-<br>
+Sounds like it’s working perfectly. Jamie<br>
+—-FOLLOWUP—-<br>
+Well, it is almost 4 days since the actual treatment and I do notice a 
+dramatic difference in the healing process, however, what used to be the
+ small wart seems to be a bit bigger (but flat), but it is like a 
+brownish almost black but not quite black color….is this normal and will
+ this part actually fall off? It literally almost looks like a mole and 
+no longer a flesh color. Is it already dead or will I probably need one 
+more treatment? I will say it is not a bump any more, just a small 
+circle like part of where the wart was and used to be. It could be a 
+bump though as it’s just a lot flatter. The area around the wart looks 
+like loose/dried skin. Not literally but looks like..what’s really weird
+ about that is I never put anything anywhere but the wart. Maybe I am 
+just unsure since I have never seen anything work on the wart before and
+ it’s all very new to me, but I greatly appreciate all your replies, 
+help and insight on this. Let me know. You’ve obviously heard from a lot
+ of people so you would know way before me on what this process entails 
+to and how it turns out.<br>
+—-FOLLOWUP—-<br>
+Jamie,<br>
+I just wanted to let you know that everything has worked and there is NO
+ wart!!! Unbelievable!!! I wish I would have started with your product 
+first as I was able to instantly see the results. You were very quick to
+ always respond and very informative in my specific instance in regards 
+to concerns or questions. You offered outstanding customer service and 
+support before, during, and even after I used your product. Jamie, you 
+have no idea how much more confidence I have since my one and only 
+genital wart is gone. GONE!!! Now I don’t feel so depressed and all the 
+other things I went thru during the 7 months of trying other worthless 
+products that did nothing your product did in literally 5 days(when my 
+scab came off). In fact, I went out over the weekend and got chicks 
+numbers again (That should tell you how down I was and did not want to 
+pass this onto someone else). I have 2 dates next week. There is a small
+ scar which looks better each day, so I believe over time it should be 
+minuscule, if at all noticeable. I will keep in touch and let you know 
+in a month what has happened to the scar and healing process. I am still
+ in shock this worked. Thanks again!<br>
+Please if you use this as a testimonial, don’t use my full name and use 
+E. in Atlanta, GA. This comes from my sincere gratefulness on the fact 
+that finally something worked, when I had all but given up on finding a 
+solution/remedy. Thanks.
+</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-rultaw11sir" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-customer-reviews-genital-warts-page.textcontent_rultaw11sir_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section>
+</div></div>{% capture ecom_google_snippet %}{% render 'ecom_google_snippet' %}{% endcapture %}{% unless ecom_google_snippet contains 'Liquid error' %}{{ ecom_google_snippet }}{% endunless %}
+{% schema %}
+{
+ "name": "Customer Reviews - Genita",
+ "locales": {
+ "en": {
+ "breadcrumbs_home_uf24lp13kx_html": "Home",
+ "cart_page_title_uf24lp13kx_html": "Cart",
+ "headingtext_9jlj92eevu5_html": "Customer Reviews<br>",
+ "headingtext_j8gc3447xbm_html": "Genital Warts<br>",
+ "headingtext_v2jjnohh02m_html": "Go to:",
+ "buttoncontent_qwqlgpjmyv_html": "Warts",
+ "buttoncontent_4qb6n5k0wi8_html": "Genital Warts",
+ "buttoncontent_zjn2234w1vl_html": "Moles",
+ "buttoncontent_gfpwgjxor3n_html": "Skin Tags",
+ "buttoncontent_rbo68q7m00g_html": "Syringoma",
+ "buttoncontent_opahtry78vj_html": "Pets \/ General",
+ "textcontent_utl940fw5i_html": "I have just applied the product as per instructions to 1 skin tag and 2 \nraised genital warts. I reapplied to all 3 areas twice. All 3 \nimmediately stung and turned black, but did not fall off. Is this normal\n or should I continue to apply until the large majority of the tag\/ wart\n is gone?? 1\/24\/07<br>\n\u2014-RESPONSE\u2014-<br>\nKristin, No, the treatment is complete. It can take 1-3 weeks for the scabs to fall off.<br>\nThanks. Jamie<br>\n\u2014-FOLLOWUP\u2014-<br>\nOne word\u2026. GONE!!!! Amazing!! I would have paid double for this amazing product!! Thank you sooooo much! 2\/13\/07\n\n\n",
+ "textcontent_j5zi3xb67o_html": "\n\nK. H., Rock Springs, WY<br>",
+ "textcontent_dr5wcyx4qcr_html": "I just wanted to say that Wart Mole Vanish worked for me. I had genital \nwarts for 18 months, making my life hell. I tried everything, Liquid \nnitrogen, laser, leep, podophyllin. I also took tons of vitamins which \ndidn\u2019t make any difference. Finally, I ordered WMV and After using Wart Mole Vanish for a few weeks, I saw good improvement in my condition. Great product thanks. \n\n",
+ "textcontent_i8gibotry3_html": "\n\nPhilip 22\/8\/2007<br>",
+ "textcontent_rsko3zb6o78_html": "HI MY NAME IS EVELA I TRY EVERYTHING FOR GENITAL WART TTO, APPLE CIDER \nVINEGAR ,ALDARA,CONDYLOX NOTHING WORKS FOR ME, FINALLY I BUY THIS \nPRODUCT, THIS AMAZING PRODUCT. I DID EVERYTHING FROM INSTRUCTIONS AND \nAFTER 5-7 DAYS MY GENITAL WARTS FALL OFF I COULDNT BELIEVE ITS AMAZING \nAFTER 2 YEARS WITH HPV FINALLY SOMETHING WORKS FOR ME \n\n",
+ "textcontent_ov2wi24wv8_html": "\n\nevela<br>",
+ "textcontent_h9jbszcb4g_html": "I was very happy with how the product removed my genital warts exactly \nas advertised. I applied wart and mole vanish just as the directions \nsaid,except I used neosporin 4 times a day after the initial \napplication. I\u2019m pleased to say that in exactly two weeks from the \ninitial application my genital warts had vanished with no pain,bleeding \nor scarring!! I would highly recommend wart and mole vanish for male \ngenital warts. I also have a large mole I\u2019m going to try it on,I \nanticipate that it will work just as well. I\u2019ll let you know if it does.\n Thank You Wart and Mole Vanish!!! \n\n",
+ "textcontent_pifcp0647sb_html": "\n\n\u201cJohn Doe\u201d, ME<br>",
+ "textcontent_c0fw203js2t_html": "\n\nMichelle Lafontaine, Windsor, ON CANADA <br>",
+ "textcontent_xdm5ma1n2cb_html": "I used your product today for the first time on a genital wart about the\n diameter of an eraser head. After the first application, it didnt \ncompletely turn black so I applied another application. Now it is \ncompletely black and it\u2019s like its raised up. Does this sound normal? I \njust want to make sure I used your product correctly. Thank you.<br>\nPaul<br>\n\u2014-RESPONSE\u2014-<br>\nHi Paul, yes that sounds like it is working good. You can always call us at 800-395-8401. Thanks!<br>\nJamie<br>\n\u2014-FOLLOWUP\u2014-<br>\nThanks. I read the instructions again. After about 20 mins\u2026part of the \nwart came off with a cotton swab. Then I applied one more treatment and \nit is a solid black now. Guess just wait now\u2026.<br>\n\u2014-RESPONSE\u2014-<br>\nplease let me know how it turns out. Thanks! Jamie<br>\n\u2014-FOLLOWUP\u2014-<br>\nWorked as advertised, thank you!\n\n",
+ "textcontent_hviofshmo5s_html": "Paul, ID<br>",
+ "textcontent_yoigxjh0oc_html": "wanted to contact you to tell you thank you. i have been dealing with \nveruca warts on my genitals for about 5 years. After several procedures,\n dermatologist appointments, over the counter, etc. WMV has cured me of \nthese most embarrassing warts. Amazing, I thought i would have to live \nwith these forever. Thanks you.\nPS i only wish that there was more contents in the shipment.\n\n",
+ "textcontent_znc7vcvu6ja_html": "Brad, Costa Mesa CA<br>",
+ "textcontent_m7mi2qwq62_html": "Hi Jamie..? I just bought your product last thursday and arrived today. \nOw\u2026I am really really happy..you are my life saviour..!! my hero.. I \nhave drowned in embarrassment and desperation so deep. I dont have \nenough money to go to doctor. dont have any health insurance..and I am \nembarassed to my partner..it made me crazy..and also our sexual life..of\n course.. I have many genital warts..I tried other products like oil \nthat applied 3 ties a day..but it\u2019s BS.. When I bought wart mole vanish I\n kept the good thoughts.. And Some users report discomfort during the process, but many see positive results in the days following treatment. Oh \nMy God..it started to peel off.. So now I bought 2 more and hopefully \nall of them will be gone forever.. Oh you are an angel sent from heaven I\n think\u2026 I wish you all the best and luck and happiness in the world.. My\n pray is for you.. Hopefully I will be free from wart forever.. God \nbless you \n\n",
+ "textcontent_qiim5wpf4r_html": "\n\nNN, San Diego<br>",
+ "textcontent_gwop92dbao_html": "I just wanted to say that I ordered your product (Wart Mole Vanish) with\n skepticism, knowing that I had tried everything in the world to remove \ngenital warts and nothing ever worked. Until I found you all and I \nabsolutely can not believe the outcome. I am amazed, Wart Mole Vanish worked effectively for many users, with results varying from person to person. I have absolutely no clue why this \nproduct is not on an infomercial and advertised everyday. Many people with HPV have found this product helpful for treating warts. Feel \nfree to use me as a reference anytime. \n\n",
+ "textcontent_o7dulbf8v_html": "Stacey, Frankfort, KY<br>",
+ "textcontent_gs9zh9fupoi_html": "Jaime, I was quite skeptical when it came to treating my genital warts \nand products offered on the internet. much to my surprise and relief, \nPristine did exactly as promised! I am incredibly satisfied with the \nresults\u2026further, thank you for your kind words and advice, I appreciate \nyour service and the product\u2026 here is to your continued success!\n\n",
+ "textcontent_vgf5s888xp_html": "Jim Miami, FL<br>",
+ "textcontent_akkhmzmoobe_html": "I have to say when I read the testimonial from the guy with genital \nwarts it scared me alot but God it was all right. I wish some how I \ncould work in some way for you and your company. This product is \namazing. You got a job for me =o)\n\n",
+ "textcontent_e4hud6z2o8t_html": "Michael, NC<br>",
+ "textcontent_rultaw11sir_html": "E, Atlanta, GA<br>"
+ }
+ },
+ "settings": [
+ {
+ "type": "header",
+ "content": "The section was generated by [Ecomposer](https:\/\/ecomposer.io).",
+ "info": "\n EComposer is a Visual Page Builder app on Shopify AppStore.\n It provides 100+ pre-built templates in library,\n so you can build unlimited pages that you can imagine with it.\n Please don't add Shopify sections to EComposer's page in the theme customize. If you do this, Shopify sections will be deleted when you republish your page in EComposer\n "
+ },
+ {
+ "type": "header",
+ "content": "[EDIT WITH EComposer APP \u2192](https:\/\/ecomposer.app\/shop?open_builder=1&page=page&id=6607b2c68d8b2f374f0f7bfb&utm_source=theme-customize)",
+ "info": "(*You must install the app to start editing this section [Learn more](https:\/\/help.ecomposer.io\/docs\/getting-started\/installation\/))"
+ }
+ ]
+}
+{% endschema %}

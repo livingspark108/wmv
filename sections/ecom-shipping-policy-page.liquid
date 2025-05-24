@@ -1,0 +1,169 @@
+{% comment %}
+ EComposer (https://ecomposer.io)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from EComposer
+ At 2025-04-08 23:40:47
+ {% endcomment %} 
+ 
+ {% assign ecom_root_url = routes.root_url %}
+ {% if ecom_root_url != '/'%}
+ {% assign ecom_root_url = routes.root_url | append: '/' %}
+ {% endif %}
+ <link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.7" /><noscript><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.7" /></noscript>
+{%capture section_id %}ecom-shipping-policy-page{% endcapture%}{% if section and section_id == section.id and headless == true %}
+{{ content_for_header }}
+{% render 'ecom_header', ECOM_THEME: true %}{% endif %}<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=EB+Garamond:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+{{'ecom-6602435a9781d90a8c0bacd2.css' | asset_url | stylesheet_tag }}
+<script src="{{'ecom-6602435a9781d90a8c0bacd2.js' | asset_url }}" defer="defer"></script>
+<script type="text/javascript" class="ecom-page-info">
+ window.EComposer = window.EComposer || {};
+ window.EComposer.TEMPLATE_ID="6602435a9781d90a8c0bacd2";
+ window.EComposer.PAGE = {"template_id":"6602435a9781d90a8c0bacd2","title":"Shipping Policy","type":"page","slug":"ecom-shipping-policy","plan_id":4};
+ </script>
+<div class="ecom-builder" id="ecom-shipping-policy"><div class="ecom-sections" data-section-id="{{section.id}}"><section style="z-index: inherit;" class="ecom-row ecom-core ecom-section ecom-d9uvof91fng" data-id="ecom-d9uvof91fng"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core ecom-j46b3ajc72s"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-79xs9c45pgd" data-core-is="block"><div class="ecom-element ecom-base ecom-base__breadcrumbs--wrapper" deep="1">
+ {%- if EComBuilderMode -%}
+ {% capture page_type %}page{% endcapture %}
+ {%- else -%}
+ {%- assign page_type = request.page_type %}
+ {%- endif %}
+ {%- capture icon_parent -%}
+ <span class="ecom-base__breadcrumbs--icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor"><path d="M272.5 5.7C281.4-1.9 294.6-1.9 303.5 5.7L567.5 229.7C577.6 238.3 578.9 253.4 570.3 263.5C561.7 273.6 546.6 274.9 536.5 266.3L512 245.5V432C512 476.2 476.2 512 432 512H144C99.82 512 64 476.2 64 432V245.5L39.53 266.3C29.42 274.9 14.28 273.6 5.7 263.5C-2.876 253.4-1.634 238.3 8.473 229.7L272.5 5.7zM112 204.8V432C112 449.7 126.3 464 144 464H432C449.7 464 464 449.7 464 432V204.8L288 55.47L112 204.8z"></path></svg>
+ </span>
+ 
+ {%- endcapture -%}
+ {%- capture icon_breadcrumbs -%}
+ <span class="ecom-base__breadcrumbs--icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"><path d="M 12.96875 4.28125 L 11.53125 5.71875 L 21.8125 16 L 11.53125 26.28125 L 12.96875 27.71875 L 23.96875 16.71875 L 24.65625 16 L 23.96875 15.28125 Z"></path></svg>
+ </span>
+ 
+ {%- endcapture -%}
+ {%- unless page_type == 'index' or page_type == 'list-collections' or page_type == '404' -%}
+ <nav class="ecom-base__breadcrumbs ecom-flex" role="navigation" aria-label="breadcrumbs">
+ <div class="ecom-base__breadcrumbs__list">
+ {{ icon_parent }}<a class="ecom-base__breadcrumbs__link" href="/">{{ 'sections.ecom-shipping-policy-page.breadcrumbs_home_79xs9c45pgd_html' | t }}</a>
+ {%- case page_type -%}
+ {%- when 'page' -%}
+ {{ icon_breadcrumbs }}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="page">Untitled</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+ {%- endif -%}
+ {%- when 'cart' -%}
+ {{ icon_breadcrumbs }}
+ <a class="ecom-base__breadcrumbs__link" href="{{ routes.cart_url }}" aria-current="cart">{{ 'sections.ecom-shipping-policy-page.cart_page_title_79xs9c45pgd_html' | t }}</a>
+ {%- when 'product' -%}
+ {%- if collection.url -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ 
+ {%- else -%}
+ {% for collection in product.collections %}
+ {% if collection.handle == 'all' or collection.handle == 'frontpage' or collection.title == 'All' %}
+ {% continue%}
+ {% else %}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {% break %}
+ {% endif%}
+ {% endfor %}
+ 
+ {%- endif -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+ {%- when 'collection' and collection.handle -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + "}}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+ {%- endif -%}
+ {%- when 'blog' -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+ {%- endif -%}
+ {%- when 'article' -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+ {%- endcase -%}
+ </div>
+ </nav>
+ {%- endunless -%}{%- assign page_type = request.page_type %}
+ {%- if page_type == 'index' -%}
+ {{ icon_parent }}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="index">Home</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="/" aria-current="index">Home</a>
+ {%- endif -%}
+ {%- endif -%}
+ </div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section><section style="z-index: inherit;" class="ecom-row ecom-core ecom-section ecom-huc19kvbtsb" data-id="ecom-huc19kvbtsb"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core ecom-lomhi77991t"><div class="core__column--wrapper"><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-wtm78wu3sv" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h1 class="ecom__heading ecom-db">{{ 'sections.ecom-shipping-policy-page.headingtext_wtm78wu3sv_html' | t }}</h1></div></div> <div class="ecom-block ecom-core core__block ecom-phxi852ub4" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-shipping-policy-page.textcontent_phxi852ub4_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block ecom-zr3f7qg4608" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-shipping-policy-page.textcontent_zr3f7qg4608_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-q6sccrfi31a" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-shipping-policy-page.headingtext_q6sccrfi31a_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-as3lmj1dq2f" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-shipping-policy-page.textcontent_as3lmj1dq2f_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-7l9l5z0hvye" data-core-is="block"><div class="ecom__element ecom-element-table ecom-flex" data-disable-inline-editor="" deep="1"><table><thead><tr><th data-index="column-0">{{ 'sections.ecom-shipping-policy-page.heading0_7l9l5z0hvye_html' | t }}</th><th data-index="column-1">{{ 'sections.ecom-shipping-policy-page.heading1_7l9l5z0hvye_html' | t }}</th><th data-index="column-2">{{ 'sections.ecom-shipping-policy-page.heading2_7l9l5z0hvye_html' | t }}</th></tr></thead><tbody><tr data-row="row-0"><td data-col="0" data-row="0" data-index="column-00">{{ 'sections.ecom-shipping-policy-page.data00_7l9l5z0hvye_html' | t }}</td><td data-col="1" data-row="0" data-index="column-01">{{ 'sections.ecom-shipping-policy-page.data01_7l9l5z0hvye_html' | t }}</td><td data-col="2" data-row="0" data-index="column-02">{{ 'sections.ecom-shipping-policy-page.data02_7l9l5z0hvye_html' | t }}</td></tr><tr data-row="row-1"><td data-col="0" data-row="1" data-index="column-10">{{ 'sections.ecom-shipping-policy-page.data10_7l9l5z0hvye_html' | t }}</td><td data-col="1" data-row="1" data-index="column-11">{{ 'sections.ecom-shipping-policy-page.data11_7l9l5z0hvye_html' | t }}</td><td data-col="2" data-row="1" data-index="column-12">{{ 'sections.ecom-shipping-policy-page.data12_7l9l5z0hvye_html' | t }}</td></tr><tr data-row="row-2"><td data-col="0" data-row="2" data-index="column-20">{{ 'sections.ecom-shipping-policy-page.data20_7l9l5z0hvye_html' | t }}</td><td data-col="1" data-row="2" data-index="column-21">{{ 'sections.ecom-shipping-policy-page.data21_7l9l5z0hvye_html' | t }}</td><td data-col="2" data-row="2" data-index="column-22">{{ 'sections.ecom-shipping-policy-page.data22_7l9l5z0hvye_html' | t }}</td></tr><tr data-row="row-3"><td data-col="0" data-row="3" data-index="column-30">{{ 'sections.ecom-shipping-policy-page.data30_7l9l5z0hvye_html' | t }}</td><td data-col="1" data-row="3" data-index="column-31">{{ 'sections.ecom-shipping-policy-page.data31_7l9l5z0hvye_html' | t }}</td><td data-col="2" data-row="3" data-index="column-32">{{ 'sections.ecom-shipping-policy-page.data32_7l9l5z0hvye_html' | t }}</td></tr><tr data-row="row-4"><td data-col="0" data-row="4" data-index="column-40">{{ 'sections.ecom-shipping-policy-page.data40_7l9l5z0hvye_html' | t }}</td><td data-col="1" data-row="4" data-index="column-41">{{ 'sections.ecom-shipping-policy-page.data41_7l9l5z0hvye_html' | t }}</td><td data-col="2" data-row="4" data-index="column-42">{{ 'sections.ecom-shipping-policy-page.data42_7l9l5z0hvye_html' | t }}</td></tr><tr data-row="row-5"><td data-col="0" data-row="5" data-index="column-50">{{ 'sections.ecom-shipping-policy-page.data50_7l9l5z0hvye_html' | t }}</td><td data-col="1" data-row="5" data-index="column-51">{{ 'sections.ecom-shipping-policy-page.data51_7l9l5z0hvye_html' | t }}</td><td data-col="2" data-row="5" data-index="column-52">{{ 'sections.ecom-shipping-policy-page.data52_7l9l5z0hvye_html' | t }}</td></tr><tr data-row="row-6"><td data-col="0" data-row="6" data-index="column-60">{{ 'sections.ecom-shipping-policy-page.data60_7l9l5z0hvye_html' | t }}</td><td data-col="1" data-row="6" data-index="column-61">{{ 'sections.ecom-shipping-policy-page.data61_7l9l5z0hvye_html' | t }}</td><td data-col="2" data-row="6" data-index="column-62">{{ 'sections.ecom-shipping-policy-page.data62_7l9l5z0hvye_html' | t }}</td></tr><tr data-row="row-7"><td data-col="0" data-row="7" data-index="column-70">{{ 'sections.ecom-shipping-policy-page.data70_7l9l5z0hvye_html' | t }}</td><td data-col="1" data-row="7" data-index="column-71">{{ 'sections.ecom-shipping-policy-page.data71_7l9l5z0hvye_html' | t }}</td><td data-col="2" data-row="7" data-index="column-72">{{ 'sections.ecom-shipping-policy-page.data72_7l9l5z0hvye_html' | t }}</td></tr><tr data-row="row-8"><td data-col="0" data-row="8" data-index="column-80">{{ 'sections.ecom-shipping-policy-page.data80_7l9l5z0hvye_html' | t }}</td><td data-col="1" data-row="8" data-index="column-81">{{ 'sections.ecom-shipping-policy-page.data81_7l9l5z0hvye_html' | t }}</td><td data-col="2" data-row="8" data-index="column-82">{{ 'sections.ecom-shipping-policy-page.data82_7l9l5z0hvye_html' | t }}</td></tr><tr data-row="row-9"><td data-col="0" data-row="9" data-index="column-90">{{ 'sections.ecom-shipping-policy-page.data90_7l9l5z0hvye_html' | t }}</td><td data-col="1" data-row="9" data-index="column-91">{{ 'sections.ecom-shipping-policy-page.data91_7l9l5z0hvye_html' | t }}</td><td data-col="2" data-row="9" data-index="column-92">{{ 'sections.ecom-shipping-policy-page.data92_7l9l5z0hvye_html' | t }}</td></tr></tbody></table></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-y801jpgcpk9" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-shipping-policy-page.headingtext_y801jpgcpk9_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-vuslrpf6kl" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-framed">{{ 'sections.ecom-shipping-policy-page.textcontent_vuslrpf6kl_html' | t }}</div></div></div> </div></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section>
+</div></div>{% capture ecom_google_snippet %}{% render 'ecom_google_snippet' %}{% endcapture %}{% unless ecom_google_snippet contains 'Liquid error' %}{{ ecom_google_snippet }}{% endunless %}
+{% schema %}
+{
+ "name": "Shipping Policy",
+ "locales": {
+ "en": {
+ "breadcrumbs_home_79xs9c45pgd_html": "Home",
+ "cart_page_title_79xs9c45pgd_html": "Cart",
+ "headingtext_wtm78wu3sv_html": "Shipping Policy<br>",
+ "textcontent_phxi852ub4_html": "<div>We try our best to ship out orders the same day they are received, but it can sometimes take 1-2 business days (excluding holidays and weekdays) to process your order.&nbsp; You will receive another notification email once your order has shipped.&nbsp; We do not guarantee shipping times.&nbsp; <br><\/div><div><br><\/div><div>All orders are packaged in discreet unmarked boxes for your privacy.&nbsp; <br><\/div>",
+ "textcontent_zr3f7qg4608_html": "<div>We try our best to ship out orders the same day they are received, but it can sometimes take 1-2 business days (excluding holidays and weekdays) to process your order.&nbsp; You will receive another notification email once your order has shipped.&nbsp; We do not guarantee shipping times.&nbsp; <br><\/div><div><br><\/div><div>All orders are packaged in discreet unmarked boxes for your privacy.&nbsp; <br><\/div>",
+ "headingtext_q6sccrfi31a_html": "Shipping Regions &amp; Fulfillment Times<br>",
+ "textcontent_as3lmj1dq2f_html": "We ship to the following regions.&nbsp; Prices are in USD unless otherwise indicated.<br>",
+ "heading0_7l9l5z0hvye_html": "REGION",
+ "heading1_7l9l5z0hvye_html": "SHIPPING TIME (BUS. DAYS)\n",
+ "heading2_7l9l5z0hvye_html": "COST\n",
+ "data00_7l9l5z0hvye_html": "United States (USPS 1st Class or Priority)\n",
+ "data01_7l9l5z0hvye_html": "2-5\n",
+ "data02_7l9l5z0hvye_html": "$4.95",
+ "data10_7l9l5z0hvye_html": "United States APO, FPO, DPO (USPS 1st Class or Priority)",
+ "data11_7l9l5z0hvye_html": "5-14",
+ "data12_7l9l5z0hvye_html": "$4.95",
+ "data20_7l9l5z0hvye_html": "Canada (Hong Kong Post)",
+ "data21_7l9l5z0hvye_html": "7-20",
+ "data22_7l9l5z0hvye_html": "$14.95",
+ "data30_7l9l5z0hvye_html": "Australia (Australia Post)\n",
+ "data31_7l9l5z0hvye_html": "1-5",
+ "data32_7l9l5z0hvye_html": "$14.95",
+ "data40_7l9l5z0hvye_html": "Japan (Hong Kong Post)",
+ "data41_7l9l5z0hvye_html": "3-10",
+ "data42_7l9l5z0hvye_html": "$14.95",
+ "data50_7l9l5z0hvye_html": "United Kingdom (Hong Kong Post)",
+ "data51_7l9l5z0hvye_html": "7-14",
+ "data52_7l9l5z0hvye_html": "\u00a314.95\n",
+ "data60_7l9l5z0hvye_html": "Germany & Austria (Hong Kong Post)",
+ "data61_7l9l5z0hvye_html": "7-14",
+ "data62_7l9l5z0hvye_html": "\u20ac14.95",
+ "data70_7l9l5z0hvye_html": "Spain (We no longer ship to Spain)",
+ "data71_7l9l5z0hvye_html": "7-21\n",
+ "data72_7l9l5z0hvye_html": "\u20ac 14,95",
+ "data80_7l9l5z0hvye_html": "France (Hong Kong Post)\n",
+ "data81_7l9l5z0hvye_html": "7-14\n",
+ "data82_7l9l5z0hvye_html": "\u20ac14.95",
+ "data90_7l9l5z0hvye_html": "International (USPS, UPS, FedEx, DHL)\nWe ship to most countries in Europe and Eastern Europe.\n\nWe do not ship to the following regions: Africa, Central America, South America & Russia. \nIf we do not ship to your country and would like to receive our product,\n\nwe can possibly ship to you on a case by case basis.\nPlease contact us.\n",
+ "data91_7l9l5z0hvye_html": "?-?",
+ "data92_7l9l5z0hvye_html": "Varies",
+ "headingtext_y801jpgcpk9_html": "How do I check the status of my order?<br>",
+ "textcontent_vuslrpf6kl_html": "<p>When your order has shipped, you will receive an email notification \nfrom us which will include a tracking number, which you can use to check its \nstatus. Please allow up to 48 hours for the tracking information to become \navailable.&nbsp; Alternatively, if you have a registered account on our website, you can check order status and tracking updates by logging into your account and clicking on \"Orders\".<br><\/p>\n<p>If you haven\u2019t received your shipping confirmation email with tracking number, please contact us with\n your name and order number, and we will look into it for you.&nbsp; Please note, some delivery methods may not have accurate tracking, even if a tracking number is provided.<br><\/p>"
+ }
+ },
+ "settings": [
+ {
+ "type": "header",
+ "content": "The section was generated by [Ecomposer](https:\/\/ecomposer.io).",
+ "info": "\n EComposer is a Visual Page Builder app on Shopify AppStore.\n It provides 100+ pre-built templates in library,\n so you can build unlimited pages that you can imagine with it.\n Please don't add Shopify sections to EComposer's page in the theme customize. If you do this, Shopify sections will be deleted when you republish your page in EComposer\n "
+ },
+ {
+ "type": "header",
+ "content": "[EDIT WITH EComposer APP \u2192](https:\/\/ecomposer.app\/shop?open_builder=1&page=page&id=6602435a9781d90a8c0bacd2&utm_source=theme-customize)",
+ "info": "(*You must install the app to start editing this section [Learn more](https:\/\/help.ecomposer.io\/docs\/getting-started\/installation\/))"
+ }
+ ]
+}
+{% endschema %}

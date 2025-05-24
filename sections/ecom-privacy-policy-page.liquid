@@ -1,0 +1,178 @@
+{% comment %}
+ EComposer (https://ecomposer.io)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from EComposer
+ At 2024-04-19 17:53:33
+ {% endcomment %} 
+ 
+ {% assign ecom_root_url = routes.root_url %}
+ {% if ecom_root_url != '/'%}
+ {% assign ecom_root_url = routes.root_url | append: '/' %}
+ {% endif %}
+ <link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /><noscript><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /></noscript>
+{%capture section_id %}ecom-privacy-policy-page{% endcapture%}{% if section and section_id == section.id and headless == true %}
+{{ content_for_header }}
+{% render 'ecom_header', ECOM_THEME: true %}{% endif %}<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=EB+Garamond:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+{{'ecom-6601c0b613904c27b50b81f2.css' | asset_url | stylesheet_tag }}
+<script src="{{'ecom-6601c0b613904c27b50b81f2.js' | asset_url }}" defer="defer"></script>
+<script type="text/javascript" class="ecom-page-info">
+ window.EComposer = window.EComposer || {};
+ window.EComposer.TEMPLATE_ID="6601c0b613904c27b50b81f2";
+ window.EComposer.PAGE = {"template_id":"6601c0b613904c27b50b81f2","title":"Privacy Policy","type":"page","slug":"ecom-privacy-policy","plan_id":4};
+ </script>
+<div class="ecom-builder" id="ecom-privacy-policy"><div class="ecom-sections" data-section-id="{{section.id}}"><section style="z-index: inherit;" class="ecom-row ecom-core ecom-section ecom-34fgd62i1zd" data-id="ecom-34fgd62i1zd"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-pov4e2hsukj"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-g4myx5wrvbs" data-core-is="block"><div class="ecom-element ecom-base ecom-base__breadcrumbs--wrapper" deep="1">
+ {%- if EComBuilderMode -%}
+ {% capture page_type %}page{% endcapture %}
+ {%- else -%}
+ {%- assign page_type = request.page_type %}
+ {%- endif %}
+ {%- capture icon_parent -%}
+ <span class="ecom-base__breadcrumbs--icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor"><path d="M272.5 5.7C281.4-1.9 294.6-1.9 303.5 5.7L567.5 229.7C577.6 238.3 578.9 253.4 570.3 263.5C561.7 273.6 546.6 274.9 536.5 266.3L512 245.5V432C512 476.2 476.2 512 432 512H144C99.82 512 64 476.2 64 432V245.5L39.53 266.3C29.42 274.9 14.28 273.6 5.7 263.5C-2.876 253.4-1.634 238.3 8.473 229.7L272.5 5.7zM112 204.8V432C112 449.7 126.3 464 144 464H432C449.7 464 464 449.7 464 432V204.8L288 55.47L112 204.8z"></path></svg>
+ </span>
+ 
+ {%- endcapture -%}
+ {%- capture icon_breadcrumbs -%}
+ <span class="ecom-base__breadcrumbs--icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"><path d="M 12.96875 4.28125 L 11.53125 5.71875 L 21.8125 16 L 11.53125 26.28125 L 12.96875 27.71875 L 23.96875 16.71875 L 24.65625 16 L 23.96875 15.28125 Z"></path></svg>
+ </span>
+ 
+ {%- endcapture -%}
+ {%- unless page_type == 'index' or page_type == 'list-collections' or page_type == '404' -%}
+ <nav class="ecom-base__breadcrumbs ecom-flex" role="navigation" aria-label="breadcrumbs">
+ <div class="ecom-base__breadcrumbs__list">
+ {{ icon_parent }}<a class="ecom-base__breadcrumbs__link" href="/">{{ 'sections.ecom-privacy-policy-page.breadcrumbs_home_g4myx5wrvbs_html' | t }}</a>
+ {%- case page_type -%}
+ {%- when 'page' -%}
+ {{ icon_breadcrumbs }}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="page">Untitled</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+ {%- endif -%}
+ {%- when 'cart' -%}
+ {{ icon_breadcrumbs }}
+ <a class="ecom-base__breadcrumbs__link" href="{{ routes.cart_url }}" aria-current="cart">{{ 'sections.ecom-privacy-policy-page.cart_page_title_g4myx5wrvbs_html' | t }}</a>
+ {%- when 'product' -%}
+ {%- if collection.url -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {%- else -%}
+ {% for collection in product.collections %}
+ {% if collection.handle == 'all' or collection.handle == 'frontpage' %}
+ {% continue%}
+ {% else %}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {% break %}
+ {% endif%}
+ {% endfor %}
+ {%- endif -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+ {%- when 'collection' and collection.handle -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + "}}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+ {%- endif -%}
+ {%- when 'blog' -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+ {%- endif -%}
+ {%- when 'article' -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+ {%- endcase -%}
+ </div>
+ </nav>
+ {%- endunless -%}{%- assign page_type = request.page_type %}
+ {%- if page_type == 'index' -%}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="index">Home</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="/" aria-current="index">Home</a>
+ {%- endif -%}
+ {%- endif -%}
+ </div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section><section style="z-index: inherit;" class="ecom-row ecom-core ecom-section ecom-tpejl2b6nte" data-id="ecom-tpejl2b6nte"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-j4i9emai5d"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-rmyxo7t5wyr" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h1 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_rmyxo7t5wyr_html' | t }}</h1></div></div> <div class="ecom-block ecom-core core__block ecom-4geli9kokrb" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_4geli9kokrb_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-674ih0hxgd5" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_674ih0hxgd5_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-qcqxyv2fwlo" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_qcqxyv2fwlo_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-pdahetbwun9" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_pdahetbwun9_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-k44xnkktvb" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_k44xnkktvb_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-54pt6d4w59" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_54pt6d4w59_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-o69zr8d40ck" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_o69zr8d40ck_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-oa24dar6pu" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_oa24dar6pu_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-alnfmzmpow5" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_alnfmzmpow5_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-ocqoywy8gvm" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_ocqoywy8gvm_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-77x9a4jarff" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_77x9a4jarff_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-h32ffz3vpm7" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_h32ffz3vpm7_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-rc6lacd74h" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_rc6lacd74h_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-r8qf58hnbae" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_r8qf58hnbae_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-qmuv0pbqiuo" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_qmuv0pbqiuo_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-0zrlmsgxd6wf" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_0zrlmsgxd6wf_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-84r149flqdl" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_84r149flqdl_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-op4p9szxysg" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_op4p9szxysg_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-edszb3s736g" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_edszb3s736g_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-xr4mte8aj1n" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_xr4mte8aj1n_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-vwekns1yvo" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_vwekns1yvo_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-1zj5ioi1n5w" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_1zj5ioi1n5w_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-910uds8ofuo" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_910uds8ofuo_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-53ajfy215s8" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_53ajfy215s8_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-a6dzysmnsz" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_a6dzysmnsz_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-n9t97rv1jk" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default"><div>The security of your personal information is important to us. When you enter sensitive information (such as credit card number and/or social security number) on our registration or order forms, we encrypt that information using the highest possible (128 bit) secure socket layer technology (SSL). [To learn more about SSL, follow this link http://www.webopedia.com/TERM/S/SSL.html]</div><div><br></div><div>We follow generally accepted industry standards to protect the personal 
+information submitted to us, both during transmission and once we 
+receive it. No method of transmission over the Internet, or method of 
+electronic storage, is 100% secure, however. Therefore, while we strive
+ to use commercially acceptable means to protect your personal 
+information, we cannot guarantee its absolute security.
+</div><div><br></div><div>If you have any questions about security on our Web site, you can send email using our contact form. <br></div><div><br></div><div>A cookie is a small text file that is stored on a user.s computer for 
+record-keeping purposes. We use cookies on this site. We do/do not link 
+the information we store in cookies to any personally identifiable 
+information you submit while on our site.</div><div><br></div><div>We use both session ID cookies and/or persistent cookies. We use 
+session cookies to make it easier for you to navigate our site. A 
+session ID cookie expires when you close you browser. A persistent 
+cookie remains on your hard drive for an extended period of time. You 
+can remove persistent cookies by following directions provided in your 
+Internet browser.s .help. file. Please goto <a href="http://www.cookiecentral.com/" title="Cookie Central - More Info on Cookies">http://www.cookiecentral.com/</a> for more information on cookies.</div><div><br></div><div>We set a persistent cookie to store your passwords, so you don.t have to
+ enter it more than once. Persistent cookies also enable us to track 
+and target the interests of our users to enhance the experience on our 
+site.</div><div><br></div><div>If you reject cookies, you may still use our site, but your ability to 
+use some areas of our site, such as contests or surveys, will be 
+limited. We also utilize cookies to track our ad campaigns.</div><div><br></div><div>We do not link the information we store in cookies to any personally identifiable information you submit while on our site.</div><div><br></div><div>Some of our business partners (e.g., advertisers) use cookies on our site. We have no access to or control over these cookies.</div><div><br></div><div>This privacy statement covers the use of cookies by Pristine Herbal 
+Touch only and does not cover the use of cookies by any advertisers.</div></div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-udr9gjkvwun" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_udr9gjkvwun_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-ebrbacbp6" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_ebrbacbp6_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-5xqtjck6q1m" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_5xqtjck6q1m_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-fx35ihxlgq5" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_fx35ihxlgq5_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-y11vqls6vi" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-privacy-policy-page.headingtext_y11vqls6vi_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-omnke8lkzop" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-privacy-policy-page.textcontent_omnke8lkzop_html' | t }}</div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section>
+</div></div>{% capture ecom_google_snippet %}{% render 'ecom_google_snippet' %}{% endcapture %}{% unless ecom_google_snippet contains 'Liquid error' %}{{ ecom_google_snippet }}{% endunless %}
+{% schema %}
+{
+ "name": "Privacy Policy",
+ "locales": {
+ "en": {
+ "breadcrumbs_home_g4myx5wrvbs_html": "Home",
+ "cart_page_title_g4myx5wrvbs_html": "Cart",
+ "headingtext_rmyxo7t5wyr_html": "Privacy Policy<br>",
+ "textcontent_4geli9kokrb_html": "<div><i><b>Effective Date: 05\/07\/2007<\/b><\/i> <br><\/div><div><br><\/div><div>We do not sell, rent, share, or transfer your personal information to third parties. The information you give us is confidential, and will not be sold or given to any individual, company or organization. <\/div>",
+ "headingtext_674ih0hxgd5_html": "Information Collection &amp; Use<br>",
+ "headingtext_qcqxyv2fwlo_html": "Registration",
+ "textcontent_pdahetbwun9_html": "\n <div> When purchasing from our Web sites, you have the option to either checkout as a guest or complete a registration form and\/or create a user name and password. During registration you are required to give contact information (such as name and email address). We use this information to fulfill your order and\/or contact you about the services on our site in which you have expressed interest.<\/div><div><br><\/div><div>You have the option to provide demographic information (such as income level and gender) to us; we encourage you to submit this information so we can provide you a more personalized experience on our site.<\/div><div><br><\/div><div>Pristine Herbal Touch is the sole owner of the information collected on www.wartmolevanish.com. Pristine Herbal Touch collects personally identifiable information from our users at several different points on our Web site. <b><br><\/b><\/div>",
+ "headingtext_k44xnkktvb_html": "Orders",
+ "textcontent_54pt6d4w59_html": "<div> If you purchase a product or service from us, we request certain personally identifiable information from you on our order form. You must provide contact information (such as name, email, and shipping address) and financial information (such as credit card number, expiration date).<\/div><div><br><\/div><div>We use this information for billing purposes and to fill your orders. If we have trouble processing an order, we will use this information to contact you. <\/div>",
+ "headingtext_o69zr8d40ck_html": "Surveys or Contests",
+ "textcontent_oa24dar6pu_html": "<div> From time-to-time we may provide you the opportunity to participate in contests or surveys on our site. If you participate, we will request certain personally identifiable information from you. Participation in these surveys or contests is completely voluntary and you therefore have a choice whether or not to disclose this information. The requested information typically includes contact information (such as name and shipping address), and demographic information (such as zip code).<\/div><div><br><\/div><div>We use this information to notify contest winners and award prizes, to monitor site traffic, or personalize the site (in the case of anonymous information collected in surveys), to send participants an email newsletter. <\/div>",
+ "headingtext_alnfmzmpow5_html": "Special Offers and Updates",
+ "textcontent_ocqoywy8gvm_html": "<div> We will occasionally send you information on products, services, special deals, promotions. You can sign up for these emails by joining our mailing list using our online web form or by contacting our customer service department by email (contact form) or telephone (310-591-8555 or toll-free at 800-395-8401). When we offer these special deals or promotions, we will provide a link to a registration form located within www.wartmolevanish.com alongside these specific announcements.<\/div><div><br><\/div><div>Out of respect for your privacy, we present the option not to receive these types of communications. Please see the section Choice\/Opt-out. <\/div>",
+ "headingtext_77x9a4jarff_html": "Service-related Announcements<br>",
+ "textcontent_h32ffz3vpm7_html": "<div> We will send you service-related announcements on rare occasions when it is necessary to do so. For instance, if our service is temporarily suspended for maintenance, we might send you an email.&nbsp;<\/div><div><br><\/div><div>Generally, you may not opt-out of these communications, which are not promotional in nature. If you do not wish to receive them, you have the option to deactivate your account by contacting our customer service representatives (310-591-8555 or toll-free at 800-395-8401). <\/div>",
+ "headingtext_rc6lacd74h_html": "Customer Service<br>",
+ "textcontent_r8qf58hnbae_html": "Based upon the personally identifiable information you provide us, we will send you a welcoming email to verify your username and password. We will also communicate with you in response to your inquiries, to provide the services you request, and to manage your account. We will communicate with you by email or telephone, in accordance with your wishes. ",
+ "headingtext_qmuv0pbqiuo_html": "Choice\/Opt-out<br>",
+ "textcontent_0zrlmsgxd6wf_html": "<div> If you no longer wish to receive our newsletter and promotional communications, you may opt-out of receiving them by following the instructions included in each newsletter or communication or by emailing us at info@pristineherbaltouch.com or you may contact us at 800-395-8401.&nbsp; Alternatively, you can mail us a letter to opt-out at the following address:<\/div><div><br><\/div><div><b>Pristine Herbal Touch<\/b><br><\/div><div>Rm. 506 Corporation Square<\/div><div>8 Lam Lok Street&nbsp;<\/div><div>Kowloon Bay, Kowloon&nbsp;<\/div><div>Hong Kong<br><\/div><div><br><\/div><div>You will be notified when your personal information is collected by any third party that is not our agent\/service provider, so you can make an informed choice as to whether or not to share your information with that party. <\/div>",
+ "headingtext_84r149flqdl_html": "Agents<br>",
+ "textcontent_op4p9szxysg_html": "We may occasionally use an outside shipping company to fulfill orders, and a credit card processing company to bill you for goods and services. These companies do not retain, share, store or use personally identifiable information for any other purposes. ",
+ "headingtext_edszb3s736g_html": "Service Providers",
+ "textcontent_xr4mte8aj1n_html": "<div> We use other third parties to provide Web analytics and web hosting on our site. When accessing this site, anonymous information may be collected and sent to these third parties. These third parties will not collect and are prohibited from using your personally identifiable information for any other purpose.&nbsp;<\/div><div><br><\/div><div>We reserve the right to disclose your personally identifiable information as required by law and when we believe that disclosure is necessary to protect our rights and\/or comply with a judicial proceeding, court order, or legal process served on our Web site. <\/div>",
+ "headingtext_vwekns1yvo_html": "Service Providers",
+ "textcontent_1zj5ioi1n5w_html": " If you post a testimonial on this site, you should be aware that any personally identifiable information you submit there can be read, collected, or used by other users of these sites, and could be used to send you unsolicited messages. We are not responsible for the personally identifiable information you choose to submit in these forums.<br><div><br><\/div><div>We do not share, sell, rent or trade PII (Personally Identifiable Information) with third parties for their promotional purposes. <\/div>",
+ "headingtext_910uds8ofuo_html": "Access to Personally Identifiable Information<br>",
+ "textcontent_53ajfy215s8_html": "If your personally identifiable information changes, or if you no longer desire our service, you may correct, update, delete or deactivate it by making the change on our member information page or by emailing our Customer Support using our contact form or by contacting us by telephone or postal mail at the contact information listed below. ",
+ "headingtext_a6dzysmnsz_html": "Service Providers",
+ "headingtext_udr9gjkvwun_html": "Changes in this Privacy Statement<br>",
+ "textcontent_ebrbacbp6_html": "<div>If we decide to change our privacy policy, we will post those changes to\n this privacy statement, the home page, and other places we deem \nappropriate so that you are aware of what information we collect, how we\n use it, and under what circumstances, if any, we disclose it.<\/div><div><br><\/div><div><b>We reserve the right to modify this privacy statement at any time, so\n please review it frequently. If we make material changes to this \npolicy, we will notify you here, by email, or by means of a notice on \nour home page.<\/b><\/div>",
+ "headingtext_5xqtjck6q1m_html": "Links to Other Sites<br>",
+ "textcontent_fx35ihxlgq5_html": "<div>This Web site contains links to other sites that are not owned or \ncontrolled by Pristine Herbal Touch. Please be aware that we, Pristine \nHerbal Touch, are not responsible for the privacy practices of such \nother sites.<\/div><div><br><\/div><div>We encourage you to be aware when you leave our site and to read the \nprivacy statements of each and every Web site that collects personally \nidentifiable information.<\/div><div><br><\/div><div>This privacy statement applies only to information collected by this Web site. <br><\/div>",
+ "headingtext_y11vqls6vi_html": "Contact Us<br>",
+ "textcontent_omnke8lkzop_html": "<b>Pristine Herbal Touch<\/b><br><div>Rm. 506 Corporation Square<\/div><div>8 Lam Lok Street&nbsp;<\/div><div>Kowloon Bay, Kowloon&nbsp;<\/div>Hong Kong<div><b><br><\/b><\/div><div>Phone: International (310) 862-4510 (hours: 8am-9pm GMT)<\/div><div>Toll free: US &amp; Canada \u2013 (800) 395-8401 (hours: 8am-9pm)<\/div><div><b><br><\/b><\/div><div><a href=\"\/pages\/contact-us\/\" title=\"Contact Us\">Click here for our Online Contact Form<\/a><\/div>"
+ }
+ },
+ "settings": [
+ {
+ "type": "header",
+ "content": "The section was generated by [Ecomposer](https:\/\/ecomposer.io).",
+ "info": "\n EComposer is a Visual Page Builder app on Shopify AppStore.\n It provides 100+ pre-built templates in library,\n so you can build unlimited pages that you can imagine with it.\n "
+ },
+ {
+ "type": "header",
+ "content": "[EDIT WITH EComposer APP \u2192](https:\/\/ecomposer.app\/shop?open_builder=1&page=page&id=6601c0b613904c27b50b81f2&utm_source=theme-customize)",
+ "info": "(*You must install the app to start editing this section [Learn more](https:\/\/help.ecomposer.io\/docs\/getting-started\/installation\/))"
+ }
+ ]
+}
+{% endschema %}

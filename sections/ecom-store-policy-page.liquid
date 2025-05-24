@@ -1,0 +1,192 @@
+{% comment %}
+ EComposer (https://ecomposer.io)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from EComposer
+ At 2024-04-19 17:50:33
+ {% endcomment %} 
+ 
+ {% assign ecom_root_url = routes.root_url %}
+ {% if ecom_root_url != '/'%}
+ {% assign ecom_root_url = routes.root_url | append: '/' %}
+ {% endif %}
+ <link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /><noscript><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /></noscript>
+{%capture section_id %}ecom-store-policy-page{% endcapture%}{% if section and section_id == section.id and headless == true %}
+{{ content_for_header }}
+{% render 'ecom_header', ECOM_THEME: true %}{% endif %}<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=EB+Garamond:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+{{'ecom-6601b46b5c5761fe3900fdf2.css' | asset_url | stylesheet_tag }}
+<script src="{{'ecom-6601b46b5c5761fe3900fdf2.js' | asset_url }}" defer="defer"></script>
+<script type="text/javascript" class="ecom-page-info">
+ window.EComposer = window.EComposer || {};
+ window.EComposer.TEMPLATE_ID="6601b46b5c5761fe3900fdf2";
+ window.EComposer.PAGE = {"template_id":"6601b46b5c5761fe3900fdf2","title":"Store Policy","type":"page","slug":"ecom-store-policy","plan_id":4};
+ </script>
+<div class="ecom-builder" id="ecom-store-policy"><div class="ecom-sections" data-section-id="{{section.id}}"><section style="z-index: inherit;" class="ecom-row ecom-core ecom-section ecom-ykpqe9dwww" data-id="ecom-ykpqe9dwww"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-lxap00a7t6"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-w15fp5f7t1b" data-core-is="block"><div class="ecom-element ecom-base ecom-base__breadcrumbs--wrapper" deep="1">
+ {%- if EComBuilderMode -%}
+ {% capture page_type %}page{% endcapture %}
+ {%- else -%}
+ {%- assign page_type = request.page_type %}
+ {%- endif %}
+ {%- capture icon_parent -%}
+ <span class="ecom-base__breadcrumbs--icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor"><path d="M272.5 5.7C281.4-1.9 294.6-1.9 303.5 5.7L567.5 229.7C577.6 238.3 578.9 253.4 570.3 263.5C561.7 273.6 546.6 274.9 536.5 266.3L512 245.5V432C512 476.2 476.2 512 432 512H144C99.82 512 64 476.2 64 432V245.5L39.53 266.3C29.42 274.9 14.28 273.6 5.7 263.5C-2.876 253.4-1.634 238.3 8.473 229.7L272.5 5.7zM112 204.8V432C112 449.7 126.3 464 144 464H432C449.7 464 464 449.7 464 432V204.8L288 55.47L112 204.8z"></path></svg>
+ </span>
+ 
+ {%- endcapture -%}
+ {%- capture icon_breadcrumbs -%}
+ <span class="ecom-base__breadcrumbs--icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"><path d="M 12.96875 4.28125 L 11.53125 5.71875 L 21.8125 16 L 11.53125 26.28125 L 12.96875 27.71875 L 23.96875 16.71875 L 24.65625 16 L 23.96875 15.28125 Z"></path></svg>
+ </span>
+ 
+ {%- endcapture -%}
+ {%- unless page_type == 'index' or page_type == 'list-collections' or page_type == '404' -%}
+ <nav class="ecom-base__breadcrumbs ecom-flex" role="navigation" aria-label="breadcrumbs">
+ <div class="ecom-base__breadcrumbs__list">
+ {{ icon_parent }}<a class="ecom-base__breadcrumbs__link" href="/">{{ 'sections.ecom-store-policy-page.breadcrumbs_home_w15fp5f7t1b_html' | t }}</a>
+ {%- case page_type -%}
+ {%- when 'page' -%}
+ {{ icon_breadcrumbs }}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="page">Untitled</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+ {%- endif -%}
+ {%- when 'cart' -%}
+ {{ icon_breadcrumbs }}
+ <a class="ecom-base__breadcrumbs__link" href="{{ routes.cart_url }}" aria-current="cart">{{ 'sections.ecom-store-policy-page.cart_page_title_w15fp5f7t1b_html' | t }}</a>
+ {%- when 'product' -%}
+ {%- if collection.url -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {%- else -%}
+ {% for collection in product.collections %}
+ {% if collection.handle == 'all' or collection.handle == 'frontpage' %}
+ {% continue%}
+ {% else %}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {% break %}
+ {% endif%}
+ {% endfor %}
+ {%- endif -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+ {%- when 'collection' and collection.handle -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + "}}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+ {%- endif -%}
+ {%- when 'blog' -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+ {%- endif -%}
+ {%- when 'article' -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+ {%- endcase -%}
+ </div>
+ </nav>
+ {%- endunless -%}{%- assign page_type = request.page_type %}
+ {%- if page_type == 'index' -%}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="index">Home</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="/" aria-current="index">Home</a>
+ {%- endif -%}
+ {%- endif -%}
+ </div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section><section style="z-index: inherit;" class="ecom-row ecom-core ecom-section ecom-65wdzvuyu8a" data-id="ecom-65wdzvuyu8a"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-k4wa0wkosj"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-cxgrrluqwoa" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h1 class="ecom__heading ecom-db">{{ 'sections.ecom-store-policy-page.headingtext_cxgrrluqwoa_html' | t }}</h1></div></div> <div class="ecom-block ecom-core core__block ecom-3h33wsmw9qi" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default"><div>This Store Policy applies to buyers from this website only. If Wart 
+&amp; Mole Vanish was purchased elsewhere, you must contact the store it
+ was bought from and follow their returns and refunds procedure.</div><div><br></div><div>Wart &amp; Mole Vanish is for EXTERNAL use only! You must be 18 years or older to purchase and use this product.
+Keep out of reach of children. For use on children, adult supervision is required.</div><div><br></div><div>Wart &amp; Mole Vanish can cause moderate to strong stinging sensations during use.
+Those with immune or healing disorders must consult a physician before using this product.</div><div><br></div><div>&nbsp;If Wart &amp; Mole Vanish cream gets into the eyes, flush immediately 
+with water. If unusual discomfort occurs, please consult a physician. <br></div><div><br></div><div><div>This product utilizes natural plant based cauterizing agents to 
+treat skin growths. Whenever manipulating or changing the dermis one 
+should expect that a blemish or scar may result. In most cases, use of 
+this product will result in a minor, temporary blemish that generally 
+fades within 30 to 90 days.</div><div><br></div><div>We DO NOT guarantee
+ that Wart &amp; Mole Vanish will not cause scars or blemishes. Results 
+can vary with individual characteristics including but not limited to, 
+skin type, color, age, genetic background and environment. We recommend 
+treating individual skin growths one at a time. The chances of scaring 
+can be greatly reduced by following our Post Treatment Care guidelines 
+located at the bottom of each instruction guide.</div></div><div><br></div><div>Approximately 90% of first time users are successful with one 
+application, the others will require 2 or more applications for complete
+ results. Most problems are user application problems and are easily 
+remedied.</div></div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-svuyls9ap6r" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-store-policy-page.headingtext_svuyls9ap6r_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-iikj86jc3lk" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-store-policy-page.headingtext_iikj86jc3lk_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-uxabfdw92po" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default"><div>We recommend that first time users purchase only one box and treat one skin growth at a time.&nbsp; Warranty is for one box only. </div><div><br></div><div>If making a warranty claim, You may be required to complete a written questionnaire about your usage of the product and/or be interviewed (by phone) with our staff to determine what problem may have occurred. If remedial assistance is not successful then we will process an application for refund. Refunds normally process within 7-10 business days.</div><div><br></div><div>Use of other products may invalidate our warranty, please contact us 
+before using any other product in combination with Wart &amp; Mole Vanish.</div><div><br></div><div>We will expect proof of purchase and use of the product.&nbsp; In order to receive customer support and warranty service, you must 
+provide the serial number located at the bottom of every Wart &amp; Mole
+ Vanish package. Merchandise with missing or altered serial numbers may
+ be stolen or counterfeit.</div><div><br></div><div>To ensure that you receive proper customer support and care, please be 
+sure to purchase from an authorized Pristine Herbal Touch distributor 
+only! To check if your Wart &amp; Mole Vanish product is genuine, 
+please contact our customer support team.</div><div><br></div><div>Please read <a href="{{ecom_root_url}}pages/about-our-guarantee" title="Wart &amp; Mole Vanish Guarantee" target="_blank">Our Guarantee page</a> first before initiating a return or refund.</div></div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-elp1d33zwn" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-store-policy-page.headingtext_elp1d33zwn_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-91hf3wkew3" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default"><div>Like prescription pharmaceuticals, we cannot accept previously opened, 
+refused or unclaimed shipments for refund. This is because we have lost 
+the chain of custody of the parcel and the product may have been 
+damaged in transit or someone may have tampered with the contents. 
+Therefore, under these conditions, there can be no refunds.</div><div><br></div><div><p>If a product has arrived damaged or if you suspect it has been 
+tampered with please advise the courier immediately and contact us for a
+ Return Merchandise Authorization. We will replace lost, damaged or 
+defective products upon written notice.</p>
+<p>Please do NOT refuse shipments or return them to the shipping 
+location. Unclaimed or refused shipments will be held for 30 days 
+pending a change ship order from you after which they will be destroyed.
+ No refunds will be issued.</p>
+<p>We will issue refunds under our existing warranty policy (see below) 
+where someone has used the product and the product has failed to perform
+ as warranted. To implement a warranty claim, you must contact us within 90 days of purchase. Please contact our Customer Care center by phone 
+or email.</p><p>Special Return requests are evaluated on a case by case basis. If a 
+return is allowed it must be sent back unopened, undamaged with the 
+plastic seal around the WMV box intact. It’s a good idea to return it in
+ a Priority Mail box with Delivery Confirmation.</p>
+<p>Undamaged WMV kits will be refunded in full minus shipping charges.</p>
+<b>WE DO NOT ACCEPT INTERNATIONAL RETURNS!</b><br>
+<b>WE DO NOT GUARANTEE INTERNATIONAL SHIPPING!</b></div></div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-t0njpo1gnaj" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-store-policy-page.textcontent_t0njpo1gnaj_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-7y82qg8if89" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-store-policy-page.headingtext_7y82qg8if89_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-qx5861almd" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-store-policy-page.textcontent_qx5861almd_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-sc982zeezo8" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-store-policy-page.headingtext_sc982zeezo8_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-967wbxh0blr" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default"><div class="modal-body">
+					<p>Warning: Statements expressed within this site have not been evaluated by the Food and Drug Administration. 
+Any and all information and/or statements found within this site are for educational purposes only and are NOT 
+intended to diagnose, treat, cure, prevent disease or replace the advice of a licensed healthcare practitioner.</p>
+<p>Note also, this website may contain links to other websites operated by other parties. These links are provided 
+for your convenience and reference only. Pristine Herbal Touch is not responsible for the content or products of 
+any linked site or the links contained therein.</p>
+<p>Pristine Herbal Touch does not dispense medical advice, prescribe, or diagnose illness. Any views and ideas 
+expressed by Pristine Herbal Touch are not intended to be a substitute for conventional medical advice or service. 
+You agree that no responsibility or liability will be incurred to any person or entity with respect to any loss, 
+damage, or injury caused or alleged to be caused directly or indirectly by the information contained within this 
+site. If you have a severe medical condition, please see a licensed healthcare practitioner. Due to risk of 
+missing fatal melanoma, self-diagnosis of moles is not advised; please see a health professional.</p>				</div></div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section>
+</div></div>{% capture ecom_google_snippet %}{% render 'ecom_google_snippet' %}{% endcapture %}{% unless ecom_google_snippet contains 'Liquid error' %}{{ ecom_google_snippet }}{% endunless %}
+{% schema %}
+{
+ "name": "Store Policy",
+ "locales": {
+ "en": {
+ "breadcrumbs_home_w15fp5f7t1b_html": "Home",
+ "cart_page_title_w15fp5f7t1b_html": "Cart",
+ "headingtext_cxgrrluqwoa_html": "Store Policy<br>",
+ "headingtext_svuyls9ap6r_html": "Warranty, Returns &amp; Refunds<br>",
+ "headingtext_iikj86jc3lk_html": "Warranty Policy<br>",
+ "headingtext_elp1d33zwn_html": "Returns &amp; Refund Policy<br>",
+ "textcontent_t0njpo1gnaj_html": "<b><\/b><div><b>To initiate a Return or Refund, please contact our Customer Care Department.<\/b><br><\/div><div><b><br><\/b><\/div><div>Phone: International (310) 862-4510 (hours: 8am-9pm GMT)<\/div><div>Toll free: US &amp; Canada \u2013 (800) 395-8401 (hours: 8am-9pm)<\/div><div><b><br><\/b><\/div><div><a href=\"\/pages\/contact-us\/\" title=\"Contact Us\">Click here for our Online Contact Form<\/a><\/div>",
+ "headingtext_7y82qg8if89_html": "Wholesale Customers<br>",
+ "textcontent_qx5861almd_html": "<p>Wholesale buyers must adhere to our selling guidelines and restrictions. These include, but are not limited to the following:<\/p>\n\n<ul><li>No selling on eBay or any other online auction houses.<\/li><li>No selling on Amazon.<\/li><li>No PPC campaigns on any search engine or any online sales unless given written permission.<\/li><li>All online sales text must be approved before being posted.<\/li><\/ul>\n\n<div><b><br><\/b><\/div><div><b>Pristine Herbal Touch (Wholesale)<\/b><br><\/div><div>Rm. 506 Corporation Square<\/div><div>8 Lam Lok Street&nbsp;<\/div><div>Kowloon Bay, Kowloon&nbsp;<\/div>Hong Kong<div><b><br><\/b><\/div><div>Phone: International (310) 862-4510 (hours: 8am-9pm GMT)<\/div><div>Toll free: US &amp; Canada \u2013 (800) 395-8401 (hours: 8am-9pm)<\/div><div><b><br><\/b><\/div><div><a href=\"\/pages\/contact-us\/\" title=\"Contact Us\">Click here for our Online Contact Form<\/a><\/div><div><br><\/div>\n\n<p>This information has not been reviewed and\/or approved by any governmental agency.<\/p>",
+ "headingtext_sc982zeezo8_html": "Wart &amp; Mole Vanish Full Legal Notice \/ Disclaimer<br>"
+ }
+ },
+ "settings": [
+ {
+ "type": "header",
+ "content": "The section was generated by [Ecomposer](https:\/\/ecomposer.io).",
+ "info": "\n EComposer is a Visual Page Builder app on Shopify AppStore.\n It provides 100+ pre-built templates in library,\n so you can build unlimited pages that you can imagine with it.\n "
+ },
+ {
+ "type": "header",
+ "content": "[EDIT WITH EComposer APP \u2192](https:\/\/ecomposer.app\/shop?open_builder=1&page=page&id=6601b46b5c5761fe3900fdf2&utm_source=theme-customize)",
+ "info": "(*You must install the app to start editing this section [Learn more](https:\/\/help.ecomposer.io\/docs\/getting-started\/installation\/))"
+ }
+ ]
+}
+{% endschema %}

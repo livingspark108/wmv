@@ -1,0 +1,254 @@
+{% comment %}
+ EComposer (https://ecomposer.io)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from EComposer
+ At 2024-04-14 20:41:06
+ {% endcomment %} 
+ 
+ {% assign ecom_root_url = routes.root_url %}
+ {% if ecom_root_url != '/'%}
+ {% assign ecom_root_url = routes.root_url | append: '/' %}
+ {% endif %}
+ <link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /><noscript><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /></noscript>
+{%capture section_id %}ecom-customer-reviews-syringoma-page{% endcapture%}{% if section and section_id == section.id and headless == true %}
+{{ content_for_header }}
+{% render 'ecom_header', ECOM_THEME: true %}{% endif %}<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=EB+Garamond:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"/>
+{{'ecom-6607b21936ee7d357f075cf2.css' | asset_url | stylesheet_tag }}
+<script src="{{'ecom-6607b21936ee7d357f075cf2.js' | asset_url }}" defer="defer"></script>
+<script type="text/javascript" class="ecom-page-info">
+ window.EComposer = window.EComposer || {};
+ window.EComposer.TEMPLATE_ID="6607b21936ee7d357f075cf2";
+ window.EComposer.PAGE = {"template_id":"6607b21936ee7d357f075cf2","title":"Customer Reviews - Syringoma","type":"page","slug":"ecom-customer-reviews-syringoma","plan_id":4};
+ </script>
+<div class="ecom-builder" id="ecom-customer-reviews-syringoma"><div class="ecom-sections" data-section-id="{{section.id}}"><section style="z-index: inherit;" class="ecom-row ecom-core ecom-section ecom-ijldhyrcpps" data-id="ecom-ijldhyrcpps"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-5414ds5n2iw"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-yfnhiwew8w" data-core-is="block"><div class="ecom-element ecom-base ecom-base__breadcrumbs--wrapper" deep="1">
+ {%- if EComBuilderMode -%}
+ {% capture page_type %}page{% endcapture %}
+ {%- else -%}
+ {%- assign page_type = request.page_type %}
+ {%- endif %}
+ {%- capture icon_parent -%}
+ <span class="ecom-base__breadcrumbs--icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="currentColor"><path d="M272.5 5.7C281.4-1.9 294.6-1.9 303.5 5.7L567.5 229.7C577.6 238.3 578.9 253.4 570.3 263.5C561.7 273.6 546.6 274.9 536.5 266.3L512 245.5V432C512 476.2 476.2 512 432 512H144C99.82 512 64 476.2 64 432V245.5L39.53 266.3C29.42 274.9 14.28 273.6 5.7 263.5C-2.876 253.4-1.634 238.3 8.473 229.7L272.5 5.7zM112 204.8V432C112 449.7 126.3 464 144 464H432C449.7 464 464 449.7 464 432V204.8L288 55.47L112 204.8z"></path></svg>
+ </span>
+ 
+ {%- endcapture -%}
+ {%- capture icon_breadcrumbs -%}
+ <span class="ecom-base__breadcrumbs--icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"><path d="M 12.96875 4.28125 L 11.53125 5.71875 L 21.8125 16 L 11.53125 26.28125 L 12.96875 27.71875 L 23.96875 16.71875 L 24.65625 16 L 23.96875 15.28125 Z"></path></svg>
+ </span>
+ 
+ {%- endcapture -%}
+ {%- unless page_type == 'index' or page_type == 'list-collections' or page_type == '404' -%}
+ <nav class="ecom-base__breadcrumbs ecom-flex" role="navigation" aria-label="breadcrumbs">
+ <div class="ecom-base__breadcrumbs__list">
+ {{ icon_parent }}<a class="ecom-base__breadcrumbs__link" href="/">{{ 'sections.ecom-customer-reviews-syringoma-page.breadcrumbs_home_yfnhiwew8w_html' | t }}</a>
+ {%- case page_type -%}
+ {%- when 'page' -%}
+ {{ icon_breadcrumbs }}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="page">Untitled</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+ {%- endif -%}
+ {%- when 'cart' -%}
+ {{ icon_breadcrumbs }}
+ <a class="ecom-base__breadcrumbs__link" href="{{ routes.cart_url }}" aria-current="cart">{{ 'sections.ecom-customer-reviews-syringoma-page.cart_page_title_yfnhiwew8w_html' | t }}</a>
+ {%- when 'product' -%}
+ {%- if collection.url -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {%- else -%}
+ {% for collection in product.collections %}
+ {% if collection.handle == 'all' or collection.handle == 'frontpage' %}
+ {% continue%}
+ {% else %}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {% break %}
+ {% endif%}
+ {% endfor %}
+ {%- endif -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+ {%- when 'collection' and collection.handle -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + "}}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+ {%- endif -%}
+ {%- when 'blog' -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+ {%- endif -%}
+ {%- when 'article' -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+ {%- endcase -%}
+ </div>
+ </nav>
+ {%- endunless -%}{%- assign page_type = request.page_type %}
+ {%- if page_type == 'index' -%}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="index">Home</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="/" aria-current="index">Home</a>
+ {%- endif -%}
+ {%- endif -%}
+ </div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section><section style="z-index: inherit;" class="ecom-row ecom-core ecom-section ecom-yp2227abtjh" data-id="ecom-yp2227abtjh"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-71sglpi1vx4"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-8s91fu93jaj" data-core-is="row"><div style="z-index: inherit;" class="ecom-row ecom-core core__block ecom-7l88fc5sk2s" data-id="ecom-7l88fc5sk2s"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first ecom-zsz0kk3crvc"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-mgck955yoki" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="2"><h1 class="ecom__heading ecom-db">{{ 'sections.ecom-customer-reviews-syringoma-page.headingtext_mgck955yoki_html' | t }}</h1></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> <div class="ecom-column ecom-core core__column--last ecom-wy5ky42dd5s"><div class="core__column--wrapper" style=""><div class="core__blocks" index="1"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-eo8p3zmmr2v" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="2"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-customer-reviews-syringoma-page.headingtext_eo8p3zmmr2v_html' | t }}</h2></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-sxzxg12ix5q" data-core-is="row"><div style="z-index: inherit;" class="ecom-row ecom-core core__block ecom-h44p0u1wucp" data-id="ecom-h44p0u1wucp"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first ecom-54qjqhq9oau"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-7y44btf15su" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="2"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-customer-reviews-syringoma-page.headingtext_7y44btf15su_html' | t }}</h3></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> <div class="ecom-column ecom-core ecom-ha7lks9iunc"><div class="core__column--wrapper" style=""><div class="core__blocks" index="1"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-rdjthj7op8b" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-warts" title="Wart &amp; Mole Vanish - Customer Reviews - Warts Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-syringoma-page.buttoncontent_rdjthj7op8b_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> <div class="ecom-column ecom-core ecom-ukwdnocij3r"><div class="core__column--wrapper" style=""><div class="core__blocks" index="2"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-2ctl36zij3q" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-genital-warts" title="Wart &amp; Mole Vanish - Customer Reviews - Genital Warts Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-syringoma-page.buttoncontent_2ctl36zij3q_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> <div class="ecom-column ecom-core ecom-8v0k74nigf5"><div class="core__column--wrapper" style=""><div class="core__blocks" index="3"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-59l7rnf3uej" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-moles" title="Wart &amp; Mole Vanish - Customer Reviews - Moles Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-syringoma-page.buttoncontent_59l7rnf3uej_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> <div class="ecom-column ecom-core ecom-o9kyrmbfoun"><div class="core__column--wrapper" style=""><div class="core__blocks" index="4"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-jdwjfntvzxg" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-skin-tags" title="Wart &amp; Mole Vanish - Customer Reviews - Skin Tags Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-syringoma-page.buttoncontent_jdwjfntvzxg_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> <div class="ecom-column ecom-core ecom-urr6aswjlu"><div class="core__column--wrapper" style=""><div class="core__blocks" index="5"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-4e5ww8x6zwk" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-syringoma" title="Wart &amp; Mole Vanish - Customer Reviews - Skin Tags Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-syringoma-page.buttoncontent_4e5ww8x6zwk_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> <div class="ecom-column ecom-core core__column--last ecom-iahlikaf2j"><div class="core__column--wrapper" style=""><div class="core__blocks" index="6"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-4t5z8eylei" data-core-is="block"><div class="ecom__element ecom-element-button ecom-button-default" deep="2"><a class="ecom__element--button ecom-flex ecom-fl_center ecom-al_center" href="{{ecom_root_url}}pages/customer-reviews-pets-general" title="Wart &amp; Mole Vanish - Customer Reviews - Skin Tags Page"><span class="ecom__element--button-icon-text">{{ 'sections.ecom-customer-reviews-syringoma-page.buttoncontent_4t5z8eylei_html' | t }}</span><span class="ecom-button-icon ecom__element--button-icon"></span></a></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-8unn0oc1fd2" data-core-is="row"><div style="z-index: inherit;" class="ecom-row ecom-core core__block ecom-w9e4bf14fa" data-id="ecom-w9e4bf14fa"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-rq2xzyoidb"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-o3wfbzliio" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-default">I am absolutely blown over by the results of this product. I followed 
+the directions precisely and even got some wonderful guidance from Ken 
+and Jamie and within about 12 days my scabs fell off on the 7 moles I 
+treated and the process was exactly what your information predicted. A 
+skin tag which I had fell off much sooner after applying the product. 
+Actually within a day or two. I also had a syringoma (which your web 
+site educated me to) and the scab on it fell off within the 12 day 
+period and I honestly am not sure exactly where it was on my neck it has
+ so thoroughly disappeared. I can’t say how appreciative I am of the 
+thorough job you have done with educating us on your web site, SO 
+CLEARLY laying out how to use the product, showing us amazing pictures 
+of what to anticipate and then finally BEING THERE!! It is so very 
+welcoming to be able to talk to a “live” person who listens and is so 
+extremely helpful…and in my experience with your company Jamie and Ken 
+are those two people. So thank you from the bottom of my heart. And just
+ as an aside I did try another product about a year ago which did not 
+work for me and the company provided little to no customer support, so 
+to find this product and the GREAT CUSTOMER SERVICE was a blessing.<br>
+—-FOLLOWUP—-<br>
+Hi Pauline, wow thanks for the great testimonial!!! This makes it all 
+worth it! What was the other product you tried? Any photos? :) Thanks 
+again! Jamie<br>
+—-RESPONSE—-<br>
+Hi Jamie, No photos…not a camera person. Dermatend was the other product
+ and I was really frustrated with their customer service. I could NOT 
+speak to a live person, could only email them and each time I did it 
+took at least 2 days to get a response and the reply just reiterated 
+what they said in their information; it did not answer my question. So 
+when I spoke with you Jamie and then with Ken it was really encouraging.
+ Again I can’t express how appreciative I am. You have a great product 
+and a great company. I’ll be sure to spread the word! Thanks,
+</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-46w7uiijbwv" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-customer-reviews-syringoma-page.textcontent_46w7uiijbwv_html' | t }}</div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-pwr7slv4w2" data-core-is="row"><div style="z-index: inherit;" class="ecom-row ecom-core core__block ecom-c8r3fxiawdj" data-id="ecom-c8r3fxiawdj"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-p35ccwoouot"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-2sksdkj1knr" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-customer-reviews-syringoma-page.textcontent_2sksdkj1knr_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-pb9b7sn6ya" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-customer-reviews-syringoma-page.textcontent_pb9b7sn6ya_html' | t }}</div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-hz5lvz0c2tb" data-core-is="row"><div style="z-index: inherit;" class="ecom-row ecom-core core__block ecom-sdv8m6vpgdl" data-id="ecom-sdv8m6vpgdl"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-oftow5zbzdp"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-7vleo67rb4g" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-default">Hi, I bought your cream weeks ago and was nervous to use it so waited 
+and finally just applied it to one syringoma near my nose ( I have about
+ 14 around my eyes). I feel comfortable with continuing to use it and so
+ now want to do 3 more around my eyes. My questions are: do i put vit E 
+on right away after treatment or let it dry out first? Do I keep it 
+moist with vit E or should I give it some time to breathe once in 
+awhile? Can I put my regular light fouundation on over healing treated 
+syringomas? Thank you, Sherri<br>
+—-FOLLOWUP—-<br>
+Hi Sherri, I’d let it dry out a little and apply NATURAL (not a 
+synthetic) E oil the next day 2 or 3 times a day. If you must use makeup
+ use an all natural one, ok. Please let me know how it works for your 
+syringoma. Thanks! Jamie<br>
+—-RESPONSE—-<br>
+Hi Jamie Thanks for getting back so fast. I just woke up and 4 out of 
+the 7 I treated look great, you can barely even see them- I am thrilled.
+ But as you can see three under my left eye look not so good…do you 
+think we scratched too much or put on too much (they were basically all 
+the same size to start) I have 5 more to treat under the left eye but am
+ waiting in between treatments. You can also see that there is some 
+swelling which I assume is because it is under the delicate eye area. I 
+put oil on and I also put on sovereign silver as an antibiotic and to 
+help healing. Thanks again! Sherri<br>
+—-FOLLOWUP—-<br>
+Hi Sherri, just checking in with you to see how everything turned out 
+with the Wart Mole Vanish? Any after photos? :) Thanks! Jamie<br>
+—-RESPONSE—-<br>
+HI Jamie, Thanks for checking in. The ones I did are almost completely 
+invisible, which I did not think was going to happen! I am planning on 
+doing a few more over x-mas break so I will take before and after this 
+time and also send you some pics of the last ones. THANK YOU!!
+</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-k9ke2h6vbod" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-customer-reviews-syringoma-page.textcontent_k9ke2h6vbod_html' | t }}</div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-i8cm9q6jd2" data-core-is="row"><div style="z-index: inherit;" class="ecom-row ecom-core core__block ecom-scoze8s59p" data-id="ecom-scoze8s59p"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-djjmbpr5zec"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-7unlmwh8bo2" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-customer-reviews-syringoma-page.textcontent_7unlmwh8bo2_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-zgmsgm2x44f" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-customer-reviews-syringoma-page.textcontent_zgmsgm2x44f_html' | t }}</div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-s040hlj3ucl" data-core-is="row"><div style="z-index: inherit;" class="ecom-row ecom-core core__block ecom-4nn9jjy8rq8" data-id="ecom-4nn9jjy8rq8"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-sdepqi2y31"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-phy5qrqrgnq" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-default">Dear Ken and Jamie,<br>
+Attached you will find my truthful (but detailed) account of my great experience with Wart and Mole Vanish.<br>
+“Solution for Syringoma” I am a 61 year old worman who had suffered with
+ tumor like growths around the eyes and down the sides of my nose. With 
+each passing year they only increased and looked awful. They were 
+singular and in clusters and even varied in size and depth into the 
+skin. I asked several different doctors, nurses, nurse practitioners, 
+and pharmacists. The opinion went from high cholesterol to tumors, to 
+menopause to old age to “I don’t know”. But they were all in agreement 
+on one point: they do look bad. I tried every eye cream on the market, 
+ice packs, hot packs, diet changes, concealers, makeup all to no avail. 
+My sadness and frustration had only continued to grow.<br>
+In May of 2005, I visited a dermatologist and he stated that I had the 
+worst case of syringoma that he had ever seen. Before the recommended 
+procedure he told me it would take several procedures and that the 
+results would not be guaranteed. He also stated that they could probably
+ only be reduced in size, not totally eliminated. The procedure produced
+ about a 10% improvement. I decided to discontinue this avenue of 
+treatment due to the unsatisfactory results and really high costs.<br>
+We began to search the internet for information on syringoma condition 
+treatment. I discovered the website for pristineherbaltouch.com and read
+ about the Wart and Mole Vanish and thought it sounded too good to be 
+true.<br>
+After reading about the product I decided to try it. I called in June 
+2005 and spoke with Jamie who was so helpful, knowledgeable, and gave me
+ specifics on proper usage of the product. I placed an order and it 
+shipped that day and arrived in 3 days.<br>
+I had someone help me apply the treatment and it is much easier to apply
+ it properly with a helper. If the “patient” pulls the skin back the 
+spots are easier to see to apply. We were able to treat 60-70 spots with
+ the first kit. We used all of the cream in the first application. The 
+scabs formed and came off as they should . about 10 days. I noticed a 
+GREAT improvement after my first treatment! The larger spots were 
+released 50-60% and most of the smallest ones were gone completely. The 
+next month, July, I ordered a second treatment from Ken. We applied it, 
+scabs came and fell off. Then I saw a 75%-80% reduction in the spots. My
+ hopes began to soar!<br>
+About two months later, I decided to go for a 3rd treatment. I am so 
+glad that I did. Now I am experiencing a 97%-98% overall improvement 
+with no scarring or spots and a totally smooth (to the finger tip touch)
+ skin around the eye and nose area.<br>
+With each treatment I saw greater results. This product DOES WORK. It is
+ a Godsend! It is truly worth every penny. I have spent less on these 
+treatments for this product than I did for one dermatologist visit and 
+procedure. I am an allergy prone person and live in pollen laden East 
+Tennessee. I had no problems at all with this product.<br>
+After so many years of frustration, suffering and misery, I now know 
+happiness, peace of mind and confidence because of this product. <br>
+P.S. Please feel free to ask Ken or Jamie any and all questions or 
+concerns about this product. They are so knowledgeable and helpful.
+</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-qsdv2vmdhb" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="2"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-customer-reviews-syringoma-page.textcontent_qsdv2vmdhb_html' | t }}</div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section>
+</div></div>{% capture ecom_google_snippet %}{% render 'ecom_google_snippet' %}{% endcapture %}{% unless ecom_google_snippet contains 'Liquid error' %}{{ ecom_google_snippet }}{% endunless %}
+{% schema %}
+{
+ "name": "Customer Reviews - Syring",
+ "locales": {
+ "en": {
+ "breadcrumbs_home_yfnhiwew8w_html": "Home",
+ "cart_page_title_yfnhiwew8w_html": "Cart",
+ "headingtext_mgck955yoki_html": "Customer Reviews<br>",
+ "headingtext_eo8p3zmmr2v_html": "Syringoma<br>",
+ "headingtext_7y44btf15su_html": "Go to:",
+ "buttoncontent_rdjthj7op8b_html": "Warts",
+ "buttoncontent_2ctl36zij3q_html": "Genital Warts",
+ "buttoncontent_59l7rnf3uej_html": "Moles",
+ "buttoncontent_jdwjfntvzxg_html": "Skin Tags",
+ "buttoncontent_4e5ww8x6zwk_html": "Syringoma",
+ "buttoncontent_4t5z8eylei_html": "Pets \/ General",
+ "textcontent_46w7uiijbwv_html": "Pauline, NC<br>",
+ "textcontent_2sksdkj1knr_html": "I am so happy that I ordered WartMoleVanish. I just bought it to see if \nit really worked. I must say it\u2019s an amazing product. It got rid of the \nsyringoma under one of my eyes. I need more for the other side of my \nface. I never thought anything would have helped my situation but I was \nwrong. Thank you so much. \n\n",
+ "textcontent_pb9b7sn6ya_html": "\n\nRosa, CA<br>",
+ "textcontent_k9ke2h6vbod_html": "\nSherri<br>",
+ "textcontent_7unlmwh8bo2_html": "It was nothing but a very pleasant surprise to have this little \nannoyance removed, rooted out without a scar, in a matter of a few days.\n There is another syringoma growing on my face now, but I have no fear \u2013\n knowing I can zap it with WMV! \n\n",
+ "textcontent_zgmsgm2x44f_html": "\n\nWatanabe, Tokyo, Japan<br>",
+ "textcontent_qsdv2vmdhb_html": "J.L. Tennessee<br>"
+ }
+ },
+ "settings": [
+ {
+ "type": "header",
+ "content": "The section was generated by [Ecomposer](https:\/\/ecomposer.io).",
+ "info": "\n EComposer is a Visual Page Builder app on Shopify AppStore.\n It provides 100+ pre-built templates in library,\n so you can build unlimited pages that you can imagine with it.\n "
+ },
+ {
+ "type": "header",
+ "content": "[EDIT WITH EComposer APP \u2192](https:\/\/ecomposer.app\/shop?open_builder=1&page=page&id=6607b21936ee7d357f075cf2&utm_source=theme-customize)",
+ "info": "(*You must install the app to start editing this section [Learn more](https:\/\/help.ecomposer.io\/docs\/getting-started\/installation\/))"
+ }
+ ]
+}
+{% endschema %}

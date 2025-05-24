@@ -1,0 +1,151 @@
+{% comment %}
+ EComposer (https://ecomposer.io)
+ You SHOULD NOT modify source code in this page because
+ It is automatically generated from EComposer
+ At 2024-03-21 21:33:03
+ {% endcomment %} 
+ 
+ {% assign ecom_root_url = routes.root_url %}
+ {% if ecom_root_url != '/'%}
+ {% assign ecom_root_url = routes.root_url | append: '/' %}
+ {% endif %}
+ <link rel="stylesheet" media="print" onload="this.media='all'" id="ecom-vendors-modal_css" href="https://cdn.ecomposer.app/vendors/css/ecom_modal.css" /><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /><noscript><link rel="stylesheet" media="all" onload="this.media='all'" id="ecom-vendors-modal_css" href="https://cdn.ecomposer.app/vendors/css/ecom_modal.css" /><link rel="stylesheet" media="all" id="ecom-vendors-css_ecomposer_base" href="https://cdn.ecomposer.app/vendors/css/ecom-base.css?v=1.6" /></noscript><script type="text/javascript" asyc="async" id="ecom-vendors-modal_js" src="https://cdn.ecomposer.app/vendors/js/ecom_modal.js" ></script>
+{%- assign headless = true -%}{%- render "ecom_theme_helper" -%}{%capture section_id %}ecom-preview-page-page{% endcapture%}{% if section and section_id == section.id and headless == true %}
+{{ content_for_header }}
+{% render 'ecom_header', ECOM_THEME: true %}{% endif %}
+{{'ecom-preview-template-page.css' | asset_url | stylesheet_tag }}
+<script src="{{'ecom-preview-template-page.js' | asset_url }}" defer="defer"></script>
+<script type="text/javascript" class="ecom-page-info">
+ window.EComposer = window.EComposer || {};
+ window.EComposer.TEMPLATE_ID="preview-template-page";
+ window.EComposer.PAGE = {"template_id":"preview-template-page","title":"About Warts","type":"page","slug":"ecom-preview-page","plan_id":4};
+ </script>
+<div class="ecom-builder" id="ecom-preview-page"><div class="ecom-sections" data-section-id="{{section.id}}"><section style="z-index: inherit;" class="ecom-row ecom-core ecom-section ecom-1mmmp7qq7lp" data-id="ecom-1mmmp7qq7lp"><div data-deep="1" class="core__row--columns"><div class="ecom-column ecom-core core__column--first ecom-1u9cujaz3f8"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-jw3qnrnf95r" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h1 class="ecom__heading ecom-db">{{ 'sections.ecom-preview-page-page.headingtext_jw3qnrnf95r_html' | t }}</h1></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-3xaz5x6kgpq" data-core-is="block"><div class="ecom-element ecom-base ecom-base__breadcrumbs--wrapper" deep="1">
+ {%- if EComBuilderMode -%}
+ {% capture page_type %}page{% endcapture %}
+ {%- else -%}
+ {%- assign page_type = request.page_type %}
+ {%- endif %}
+ {%- capture icon_parent -%}
+ 
+ {%- endcapture -%}
+ {%- capture icon_breadcrumbs -%}
+ <span class="ecom-base__breadcrumbs--icon">
+ <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor"><path d="M 12.96875 4.28125 L 11.53125 5.71875 L 21.8125 16 L 11.53125 26.28125 L 12.96875 27.71875 L 23.96875 16.71875 L 24.65625 16 L 23.96875 15.28125 Z"></path></svg>
+ </span>
+ 
+ {%- endcapture -%}
+ {%- unless page_type == 'index' or page_type == 'list-collections' or page_type == '404' -%}
+ <nav class="ecom-base__breadcrumbs ecom-flex" role="navigation" aria-label="breadcrumbs">
+ <div class="ecom-base__breadcrumbs__list">
+ {{ icon_parent }}<a class="ecom-base__breadcrumbs__link" href="/">{{ 'sections.ecom-preview-page-page.breadcrumbs_home_3xaz5x6kgpq_html' | t }}</a>
+ {%- case page_type -%}
+ {%- when 'page' -%}
+ {{ icon_breadcrumbs }}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="page">Untitled</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="{{ page.url }}" aria-current="page">{{ page.title }}</a>
+ {%- endif -%}
+ {%- when 'cart' -%}
+ {{ icon_breadcrumbs }}
+ <a class="ecom-base__breadcrumbs__link" href="{{ routes.cart_url }}" aria-current="cart">{{ 'sections.ecom-preview-page-page.cart_page_title_3xaz5x6kgpq_html' | t }}</a>
+ {%- when 'product' -%}
+ {%- if collection.url -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {%- else -%}
+ {% for collection in product.collections %}
+ {% if collection.handle == 'all' or collection.handle == 'frontpage' %}
+ {% continue%}
+ {% else %}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {% break %}
+ {% endif%}
+ {% endfor %}
+ {%- endif -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
+ {%- when 'collection' and collection.handle -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
+ {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + "}}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ collection.url }}" aria-current="page">{{ collection.title }}</a>
+ {%- endif -%}
+ {%- when 'blog' -%}
+ {%- if current_tags -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {%- capture tag_url -%}{{blog.url}}/tagged/{{ current_tags | join: "+" }}{%- endcapture -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ tag_url }}" aria-current="page">{{ current_tags | join: " + " }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ blog.url }}" aria-current="page">{{ blog.title }}</a>
+ {%- endif -%}
+ {%- when 'article' -%}
+ {{ icon_breadcrumbs }}{{ blog.title | link_to: blog.url }}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ article.url }}" aria-current="page">{{ article.title }}</a>
+ {%- else -%}
+ {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ request.path }}" aria-current="page">{{ page_title }}</a>
+ {%- endcase -%}
+ </div>
+ </nav>
+ {%- endunless -%}{%- assign page_type = request.page_type %}
+ {%- if page_type == 'index' -%}
+ {%- if EComBuilderMode -%}
+ <a class="ecom-base__breadcrumbs__link" href="#" aria-current="index">Home</a>
+ {%- else -%}
+ <a class="ecom-base__breadcrumbs__link" href="/" aria-current="index">Home</a>
+ {%- endif -%}
+ {%- endif -%}
+ </div></div> <div class="ecom-block ecom-core core__block elmspace ecom-1m5k0u2bhrf" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-preview-page-page.headingtext_1m5k0u2bhrf_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-wr2le5yy05j" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-preview-page-page.textcontent_wr2le5yy05j_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-mizotappgxk" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-preview-page-page.headingtext_mizotappgxk_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-5d3lni6q1z5" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-preview-page-page.textcontent_5d3lni6q1z5_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-dozfryw9oq9" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-preview-page-page.headingtext_dozfryw9oq9_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-i5qayhrdpa" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">
+ <div><b>Contagious and autoinculable</b></div><div>Warts are contagious and may be passed from one person to another 
+through touching. It is also possible to get warts by using objects used
+ by a person who has warts. Genital warts can be transmitted to an 
+uninfected person during sexual intercourse. Among women, warts can grow
+ undetected on the cervix or inside the vagina. Women can infect their 
+sexual partner without either of them knowing it. <b><br></b></div><div><b><br></b></div><div><b>Warts can spread and form daughter warts</b></div><div>Warts are known to spread in location to other parts of the body, and
+ more importantly, to other people. In a few cases, they have also been 
+known to heal by themselves. However, wart treatment is important not 
+only to prevent it from spreading, but to eliminate it, as well.</div><div><b><br></b></div><div><b>Infectious in origin</b></div><div>As with other viral infections, warts are highly contagious. The 
+truth is one can “self-spread” these lesions. Plantar warts, also known 
+as foot warts, commonly begin in areas where skin is traumatized. One 
+can also get plantar warts from communal areas such as locker rooms, 
+public or even private bathrooms and hotel rooms. To minimize the spread
+ of warts to others while in such settings, the use of disinfectants, 
+sandals and clean towels is encouraged.</div></div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-a11cvqhsavq" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h2 class="ecom__heading ecom-db">{{ 'sections.ecom-preview-page-page.headingtext_a11cvqhsavq_html' | t }}</h2></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-fl7c1ptloij" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-preview-page-page.textcontent_fl7c1ptloij_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-v7p0fzgly6" data-core-is="row"><div style="z-index: inherit;" class="ecom-row ecom-core core__block ecom-4fst8anu6qk" data-id="ecom-4fst8anu6qk"><div data-deep="2" class="core__row--columns"><div class="ecom-column ecom-core core__column--first core__column--last ecom-gvf7vgn1w2b"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-585c3ux2s69" data-core-is="block"><div style="z-index: inherit;" class="ecom-row ecom-core core__block ecom-y5bmji7du7i" data-id="ecom-y5bmji7du7i"><div data-deep="3" class="core__row--columns"><div class="ecom-column ecom-core core__column--first ecom-hm0um0tnh6"><div class="core__column--wrapper" style=""><div class="core__blocks" index="0"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-e0q2oo730ko" data-core-is="block"><div class="ecom-element ecom-base-image" deep="3"><figure><div class="ecom-container-image ecom-image-align" data-stopdrag=""><div data-stopdrag="" class="ecom-image-content-position ecom-image-default ecom-base-image-container-overlay" style=""><picture class="ecom-image-picture"><img loading="lazy" fetchpriority="low" src="https://cdn.shopify.com/s/files/1/0604/7789/8917/files/wmp_box_trans.png?v=1705368135" alt="wmp_box_trans" width="573" height="581" style=""></picture></div></div></figure></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> <div class="ecom-column ecom-core core__column--last ecom-wevdk3vm03g"><div class="core__column--wrapper" style=""><div class="core__blocks" index="1"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-wzxhvb4hly" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="3"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-preview-page-page.headingtext_wzxhvb4hly_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-mn1e1su5yy" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="3"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-preview-page-page.textcontent_mn1e1su5yy_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block ecom-08cy05qb7w2j" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="3"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-preview-page-page.textcontent_08cy05qb7w2j_html' | t }}</div></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> <div class="ecom-column ecom-core core__column--last ecom-8gx1z97guui"><div class="core__column--wrapper" style=""><div class="core__blocks" index="1"><div class="core__blocks--body"><div class="ecom-block ecom-core core__block elmspace ecom-zwjlqtkf3a" data-core-is="block"><div class="ecom-element ecom-base-image" deep="1"><figure><div class="ecom-container-image ecom-image-align" data-stopdrag=""><div data-stopdrag="" class="ecom-image-content-position ecom-image-default ecom-base-image-container-overlay" style=""><picture class="ecom-image-picture"><img loading="lazy" fetchpriority="low" src="https://cdn.shopify.com/s/files/1/0604/7789/8917/files/wmv_box_trans.png?v=1703130610" alt="wmv_box_trans" width="439" height="624" style=""></picture></div></div></figure></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-div826zmsn" data-core-is="block"><div class="ecom__element ecom-element element__text" data-stopdrag="" deep="1"><div class="text-content ecom-html has-drop-cap-view-default">{{ 'sections.ecom-preview-page-page.textcontent_div826zmsn_html' | t }}</div></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-efo145xzfm5" data-core-is="block"><div class="ecom__element element__heading ecom-element ecom-html" data-stopdrag="true" deep="1"><h3 class="ecom__heading ecom-db">{{ 'sections.ecom-preview-page-page.headingtext_efo145xzfm5_html' | t }}</h3></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-nt04mh2jxki" data-core-is="block"><div class="ecom-element ecom-base-image" deep="1"><figure><div class="ecom-container-image ecom-image-align" data-stopdrag=""><div data-stopdrag="" class="ecom-image-content-position ecom-image-default ecom-base-image-container-overlay" style=""><picture class="ecom-image-picture"><img loading="lazy" fetchpriority="low" src="https://cdn.shopify.com/s/files/1/0604/7789/8917/files/subpage_cherylson.jpg?v=1703976670" alt="subpage_cherylson" width="302" height="105" style=""></picture></div></div></figure></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-938ryp1aa1" data-core-is="block"><div class="ecom-element ecom-base-image" deep="1"><figure><div class="ecom-container-image ecom-image-align" data-stopdrag=""><div data-stopdrag="" class="ecom-image-content-position ecom-image-default ecom-base-image-container-overlay" style=""><picture class="ecom-image-picture"><img loading="lazy" fetchpriority="low" src="https://cdn.shopify.com/s/files/1/0604/7789/8917/files/subpage_mom.jpg?v=1703976717" alt="subpage_mom" width="302" height="226" style=""></picture></div></div></figure></div></div> <div class="ecom-block ecom-core core__block elmspace ecom-ai0ren8n1qj" data-core-is="block"><div class="ecom-element ecom-base-image" deep="1"><figure><div class="ecom-container-image ecom-image-align" data-stopdrag=""><div data-stopdrag="" class="ecom-image-content-position ecom-image-default ecom-base-image-container-overlay" style=""><picture class="ecom-image-picture"><img loading="lazy" fetchpriority="low" src="https://cdn.shopify.com/s/files/1/0604/7789/8917/files/subpage_nikkiwart.jpg?v=1703981664" alt="subpage_nikkiwart" width="302" height="431" style=""></picture></div></div></figure></div></div> </div></div></div><div class="ecom-column__overlay"><div class="ecom-overlay"></div></div><div class="core__column--resize" style="display: none;"></div></div> </div><div class="ecom-section__overlay"><div class="ecom-overlay"></div></div> </section>
+</div></div>
+{% schema %}
+{
+ "name": "About Warts",
+ "locales": {
+ "en": {
+ "breadcrumbs_home_3xaz5x6kgpq_html": "Home",
+ "cart_page_title_3xaz5x6kgpq_html": "Cart",
+ "headingtext_jw3qnrnf95r_html": "About Warts<br>",
+ "headingtext_1m5k0u2bhrf_html": "What is a Wart?<br>",
+ "textcontent_wr2le5yy05j_html": "A WART is an intra epidermal or skin tumor caused by a variety of \nviruses. The many varieties of warts that exist are named by the way \nthey appear or where they are located. A wart is a small, circumscribed \ntumor of the outer or horny layer of the skin. There are flat and smooth\n warts as well as elevated warts, warts that are firm and rise from the \nsurrounding skin. Mainly caused by the Human Papilloma Virus(HPV), they \nvary in size and may be accompanied by pain, especially if they occur in\n the feet (plantar warts). The Human Papilloma Virus belongs to the \nfamily of viruses that causes warts and has been implicated as a \npossible cause of genital cancers and, more recently, cancers and other \nabnormal growths of the eye.",
+ "headingtext_mizotappgxk_html": "Types of Warts<br>",
+ "textcontent_5d3lni6q1z5_html": "<ul><li><b>Common warts (Verruca Vulgaris)<\/b> \u2013 These usually grow on the fingers and on the backs of hands.<\/li><li><b>Foot warts (Verruca Plantaris)<\/b> \u2013 These are usually on the soles or the plantar area of the feet and are also referred to as plantar warts.<\/li><li><b>Flat warts<\/b> \u2013 These are smaller and smoother than other \nwarts with the tendency to grow in large numbers, 20 to 100 at a time. \nThey can be expected to grow anywhere. Among children they are most \ncommon on the face (facial warts). In adults they are often found in the\n chin area in men and on the legs in women.<\/li><li><b>Genital warts<\/b> \u2013 These grow on the genitals and rectal area.<\/li><li><b>Mosaic warts<\/b> \u2013 Attributes its name to the vast number of \nwarts that appear in a contiguous pattern. The Mater (mother) wart will \npresent itself in the center of the mosaic wart with small satellite \nlesions surrounding it.<\/li><\/ul>",
+ "headingtext_dozfryw9oq9_html": "More Info About Warts<br>",
+ "headingtext_a11cvqhsavq_html": "Wart Post-Treatment Problem with Surgeries or Other Products",
+ "textcontent_fl7c1ptloij_html": "<div><b>High Recurrence Rate of Warts<\/b><\/div><div>Depending on the wart treatment and the type of wart involved (common wart, hand wart, plantar wart, genital wart),\n different recurrence rates have been recorded. A common wart removal \ntreatment currently used in the United States is a self-applied, 5% \nimiquimod cream that stimulates the immune system to fight off the virus\n and lesions. Common warts have a recurrence rate of about 13-19% with \nthis treatment.\n\n<\/div><p>Sometimes large warts are surgically removed under local anesthesia. \nThis type of wart removal treatment has a recurrence rate of about 21%. \nIn a study using self-applied podofilox gel, the cure rate was low at \nonly 51% but the recurrence rate was only about 10%. For cryosurgery, \nthe recurrence rate is quite high at 73%.<\/p> ",
+ "headingtext_wzxhvb4hly_html": "IMPORTANT INFO!<br>",
+ "textcontent_mn1e1su5yy_html": "For those with multiple warts<br>",
+ "textcontent_08cy05qb7w2j_html": "If you are suffering from multiple warts (HPV), <b><u>genital warts<\/u><\/b>,\n other viruses or bacterial infections (flu, colds), it may be because \nof a weak immune system. You might want to consider trying Wild Mountain\n Papaya (Anti-Oxidant Enzyme Powder).<br>",
+ "textcontent_div826zmsn_html": "<div>Wart Mole Vanish has been successfully used by hundreds of thousands of people to remove all kinds of warts including genital warts.<\/div><div><ul><li>One 20 minute application is normal (Some stubborn warts such as genital warts, plantar warts and common hand warts require 2-3 back to back, 20 minute applications)<\/li><li>No daily application of creams, oils or acids!<\/li><li>100% natural<\/li><li>Naturally cauterizes the cell tissue of warts down to the root<\/li><li>International multi-award winning<\/li><li>Affordable and easy to use at home.<\/li><li>Guaranteed to remove your moles, or your money back!<\/li><\/ul><\/div>",
+ "headingtext_efo145xzfm5_html": "WMV Wart Removal Photos<br>"
+ }
+ },
+ "settings": [
+ {
+ "type": "header",
+ "content": "The section was generated by [Ecomposer](https:\/\/ecomposer.io).",
+ "info": "\n EComposer is a Visual Page Builder app on Shopify AppStore.\n It provides 100+ pre-built templates in library,\n so you can build unlimited pages that you can imagine with it.\n "
+ },
+ {
+ "type": "header",
+ "content": "[EDIT WITH EComposer APP \u2192](https:\/\/ecomposer.app\/shop?open_builder=1&page=page&id=preview-template-page&utm_source=theme-customize)",
+ "info": "(*You must install the app to start editing this section [Learn more](https:\/\/help.ecomposer.io\/docs\/getting-started\/installation\/))"
+ }
+ ]
+}
+{% endschema %}
