@@ -177,7 +177,7 @@
             "type": "bl_col",
             "settings": {
               "col_heading": "Product",
-              "menu": "info-menu",
+              "menu": "",
               "menu_style": "1",
               "col_border": "none",
               "col_dk": "3",
@@ -345,7 +345,6 @@
           "layout": "t4s-container-wrap",
           "cl_bg": "#f7f7f7",
           "cl_bg_gradient": "",
-          "image_bg": "shopify://shop_images/cashew_bg_footer_small_f16fd33c-485e-4e25-b7ef-074df6133368.png",
           "mg": "",
           "pd": "60px,,40px,",
           "mg_tb": "",
@@ -916,7 +915,6 @@
             "disabled": true,
             "settings": {
               "title": "<span style=\"color: #db8b00; font-size:14px;\">Buy Now</span>",
-              "image": "shopify://shop_images/wmv-box.png",
               "link": "https://wartmolevanish.com/checkouts/cn/Z2NwLWFzaWEtc291dGhlYXN0MTowMUo2NlFBMDRNRTYzRUVIQU1SV1YyOVdQSw"
             }
           },
@@ -1150,7 +1148,7 @@
               "title": "Warts",
               "url": "",
               "open_link": "_self",
-              "menu": "wart-menu",
+              "menu": "",
               "lb": "",
               "lb_cl": "",
               "icons_op": "2",
@@ -1163,7 +1161,7 @@
               "title": "Moles",
               "url": "",
               "open_link": "_self",
-              "menu": "mole-menu",
+              "menu": "",
               "lb": "",
               "lb_cl": "",
               "icons_op": "2",
@@ -1176,7 +1174,7 @@
               "title": "Skin Tags",
               "url": "",
               "open_link": "_self",
-              "menu": "skin-tag-menu",
+              "menu": "",
               "lb": "",
               "lb_cl": "",
               "icons_op": "2",
@@ -1189,7 +1187,7 @@
               "title": "Syringoma",
               "url": "",
               "open_link": "_self",
-              "menu": "syringoma-menu",
+              "menu": "",
               "lb": "",
               "lb_cl": "",
               "icons_op": "2",
@@ -2066,34 +2064,9 @@
     },
     "content_for_index": [],
     "blocks": {
-      "124348908681409149": {
-        "type": "shopify://apps/simple-bundles-kits/blocks/simple-bundles-v2/e553276b-36b2-446d-b80a-aa47fe5f96ac",
-        "disabled": false,
-        "settings": {
-          "select_placeholder": "Please select an option",
-          "disable_oos_options": true,
-          "custom_css": "",
-          "custom_js": ""
-        }
-      },
-      "3847134708050210359": {
-        "type": "shopify://apps/transcy/blocks/switcher_embed_block/bce4f1c0-c18c-43b0-b0b2-a1aefaa44573",
-        "disabled": false,
-        "settings": {}
-      },
-      "21474836472147483647": {
-        "type": "shopify://apps/ecomposer-builder/blocks/app-embed/a0fc26e1-7741-4773-8b27-39389b4fb4a0",
-        "disabled": false,
-        "settings": {}
-      },
-      "1793219247286972479": {
-        "type": "shopify://apps/searchpie-seo-speed/blocks/sb-snippets/29f6c508-9bb9-4e93-9f98-b637b62f3552",
-        "disabled": false,
-        "settings": {}
-      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "button_color": "#2e4e7b",
           "secondary_color": "#ffffff",
