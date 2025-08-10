@@ -1,4 +1,4 @@
-/* Publish by EComposer at 2025-08-10 14:11:16*/
+/* Publish by EComposer at 2025-08-10 14:12:19*/
                 (function(){
                     const Func = (function() {
                         'use strict';
@@ -377,6 +377,10 @@ if(!this.$el)return!1;const e=this.$el;let i=e.closest(".ecom-product-form--sing
                     
                         document.querySelectorAll('.ecom-ihvvod4idh').forEach(function(el){
                             Func.call({$el: el, id: 'ecom-ihvvod4idh', settings: {"animation":false},isLive: true});
+                        });
+                    
+                        document.querySelectorAll('.ecom-caajkci0q1a').forEach(function(el){
+                            Func.call({$el: el, id: 'ecom-caajkci0q1a', settings: {"animation":true},isLive: true});
                         });
                     
 
