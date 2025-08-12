@@ -548,14 +548,6 @@
       "ecomiconlisttitle0_ecomljcjygxnyx_ljcjygxnyx_html": "Secure checkout"
     },
     "ecom-wmv-home-home": {
-      "product_single_sale_text_8akbvuxi85x_html": "Sale {price}%",
-      "product_single_sold_text_8akbvuxi85x_html": "Sold out",
-      "product_option_swatch_ds8iorxhtub_html": "Type",
-      "email_placeholder_y66v3vorqc_html": "Your email address",
-      "submit_title_y66v3vorqc_html": "Subscribe",
-      "success_message_y66v3vorqc_html": "Subscribed successfully!",
-      "error_title_y66v3vorqc_html": "Opps!. An error has occurred",
-      "error_already_y66v3vorqc_html": "Email have already subscribed!",
       "headingtext_9bmge8tsgw_html": "Wart &amp; Mole Vanish<br>",
       "textcontent_hv6b3s426g7_html": "<div>Wart &amp; Mole Vanish is a premium, all natural herbal product for the removal of all types of skin growths.<br></div>",
       "buttoncontent_46ce6ouayje_html": "Shop now",
@@ -652,6 +644,8 @@
       "textcontent_jec8gx9gj7b_html": "<div></div><i>“Thank you so much for such a wonderful product!! I am just amazed, it is a miracle in a box!! It has done wonders for my self esteem.” </i>-Rachel A.<div></div>",
       "buttoncontent_y0ngywdj0k_html": "More Photos",
       "headingtext_vkyb154dve_html": "As Featured In...<br>",
+      "product_single_sale_text_8akbvuxi85x_html": "Sale {price}%",
+      "product_single_sold_text_8akbvuxi85x_html": "Sold out",
       "textcontent_m0rei5u6yn_html": "(1000+ rating)",
       "ecomiconlisttitle0_ecom5xhgzaz9hsf_5xhgzaz9hsf_html": "One 20 Minute Application",
       "ecomiconlisttitle1_ecom5xhgzaz9hsf_5xhgzaz9hsf_html": "100% All Natural Ingredients",
@@ -662,6 +656,7 @@
       "ecomiconlisttitle6_ecom5xhgzaz9hsf_5xhgzaz9hsf_html": "Affordable Compared to Other Treatments",
       "ecomiconlisttitle7_ecom5xhgzaz9hsf_5xhgzaz9hsf_html": "Convenient & Private",
       "ecomiconlisttitle8_ecom5xhgzaz9hsf_5xhgzaz9hsf_html": "Many Satisfied Customers",
+      "product_option_swatch_ds8iorxhtub_html": "Type",
       "headingtext_qm8owo5cavh_html": "Quantity",
       "add_to_cart_8idf82wcbrm_html": "Add to cart",
       "pre_order_8idf82wcbrm_html": "Pre Order",
@@ -688,7 +683,12 @@
       "ecomiconlisttitle3_ecomdy0zfozhlo_dy0zfozhlo_html": "Secure Order",
       "ecomiconlistdes_3_ecomdy0zfozhlo_dy0zfozhlo_html": "Shopping cart and payments secured by Shopify with industry leading SSL encryption.<br>",
       "headingtext_hzp0qwxnziq_html": "Join Our Mailing List<br>",
-      "textcontent_rv4wc19krik_html": "Sign-up for news, tips and promos. No spam, ever.\n"
+      "textcontent_rv4wc19krik_html": "Sign-up for news, tips and promos. No spam, ever.\n",
+      "email_placeholder_y66v3vorqc_html": "Your email address",
+      "submit_title_y66v3vorqc_html": "Subscribe",
+      "success_message_y66v3vorqc_html": "Subscribed successfully!",
+      "error_title_y66v3vorqc_html": "Opps!. An error has occurred",
+      "error_already_y66v3vorqc_html": "Email have already subscribed!"
     },
     "ecom-about-moles-page": {
       "breadcrumbs_home_1nqw485b1o3_html": "Home",
