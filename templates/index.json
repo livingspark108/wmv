@@ -10,55 +10,12 @@
 {
   "layout": "theme",
   "sections": {
-    "promo_text_NAg3fe": {
-      "type": "promo_text",
-      "blocks": {
-        "1_QGxihf": {
-          "type": "1",
-          "settings": {
-            "content": "<p>TODAY DEAL SALE OFF 70%. END IN [countdown]. HURRY UP!!!</p>",
-            "countdown": "2023/12/20",
-            "cus_cd": "%-D day%!D %H:%M:%S",
-            "dayx": 0,
-            "cl_text": "#fff",
-            "cl_link": "#56cfe1",
-            "fw_text": 600,
-            "fs_text": 12,
-            "lh_text": 0,
-            "ls_text": 0,
-            "fs_mb_text": 10,
-            "lh_text_mb": 0,
-            "ls_mb_text": 0
-          }
-        }
-      },
-      "block_order": [
-        "1_QGxihf"
-      ],
-      "name": "Promo text",
-      "settings": {
-        "effect": "slider",
-        "au_time": 3,
-        "layout": "t4s-container-wrap",
-        "cl_bg": "#000",
-        "cl_bg_gradient": "",
-        "mg": ",,50px,",
-        "pd": "12px,,12px,",
-        "mg_tb": "",
-        "pd_tb": "",
-        "mg_mb": ",,30px,",
-        "pd_mb": "10px,,10px,",
-        "use_cus_css": false,
-        "code_cus_css": ""
-      }
-    },
     "ecom-wmv-home-home": {
       "type": "ecom-wmv-home-home",
       "settings": {}
     }
   },
   "order": [
-    "promo_text_NAg3fe",
     "ecom-wmv-home-home"
   ]
 }
