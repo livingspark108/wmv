@@ -356,58 +356,34 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "blocks": {
-          "announcement-bar-0": {
+          "announcement_fUk7BV": {
             "type": "announcement",
             "settings": {
               "link": "",
-              "content": "<p>Today deal sale off <strong>70%</strong>. End in <strong>[countdown]</strong>. Hurry Up [icon_arrow]</p>",
+              "content": "<p><strong>SPRING SALE — ENJOY 20% OFF SITEWIDE</strong></p>",
               "adding_border": false,
-              "countdown": "2023/12/26",
-              "txt_day": "days",
-              "dayx": 0
-            }
-          },
-          "announcement-bar-1": {
-            "type": "announcement",
-            "settings": {
-              "link": "",
-              "content": "<p>Today deal sale off <strong>70%</strong>. End in <strong>[countdown]</strong>. Hurry Up [icon_arrow]</p>",
-              "adding_border": false,
-              "countdown": "2023/12/26",
-              "txt_day": "days",
-              "dayx": 0
-            }
-          },
-          "announcement-bar-2": {
-            "type": "announcement",
-            "settings": {
-              "link": "",
-              "content": "<p>Today deal sale off <strong>70%</strong>. End in <strong>[countdown]</strong>. Hurry Up [icon_arrow]</p>",
-              "adding_border": false,
-              "countdown": "2023/12/26",
-              "txt_day": "days",
+              "countdown": "",
+              "txt_day": "",
               "dayx": 0
             }
           }
         },
         "block_order": [
-          "announcement-bar-0",
-          "announcement-bar-1",
-          "announcement-bar-2"
+          "announcement_fUk7BV"
         ],
         "settings": {
-          "show_announcement": false,
+          "show_announcement": true,
           "effect": "1",
-          "au_time": 3.5,
-          "height": 45,
+          "au_time": 0,
+          "height": 30,
           "fontsize": 12,
-          "cl": "#132545",
-          "bg": "#d5f7fe",
+          "cl": "#ffffff",
+          "bg": "#16b33f",
           "bg_op": 100,
-          "close": "1",
-          "cl_btn": "#132545",
+          "close": "0",
+          "cl_btn": "#fff",
           "version": "1",
-          "date": 60
+          "date": 100
         }
       },
       "top-bar": {
@@ -2085,6 +2061,11 @@
       },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "pagefly-page-builder": {
+        "type": "shopify://apps/pagefly-page-builder/blocks/app-embed/83e179f7-59a0-4589-8c66-c0dddf959200",
         "disabled": false,
         "settings": {}
       }
