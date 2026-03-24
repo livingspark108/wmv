@@ -10,12 +10,55 @@
 {
   "layout": "theme",
   "sections": {
+    "promo_text_g4d67g": {
+      "type": "promo_text",
+      "blocks": {
+        "1_FrcHbX": {
+          "type": "1",
+          "settings": {
+            "content": "<p><strong>SPRING SALE — ENJOY 20% OFF SITEWIDE</strong><br/></p><p><br/></p>",
+            "countdown": "",
+            "cus_cd": "",
+            "dayx": 0,
+            "cl_text": "#fff",
+            "cl_link": "#fff",
+            "fw_text": 900,
+            "fs_text": 14,
+            "lh_text": 0,
+            "ls_text": 0,
+            "fs_mb_text": 10,
+            "lh_text_mb": 0,
+            "ls_mb_text": 0
+          }
+        }
+      },
+      "block_order": [
+        "1_FrcHbX"
+      ],
+      "name": "Promo text",
+      "settings": {
+        "effect": "fade",
+        "au_time": 0,
+        "layout": "t4s-container-fluid",
+        "cl_bg": "#3c8903",
+        "cl_bg_gradient": "",
+        "mg": "",
+        "pd": "12px,,0px,",
+        "mg_tb": "",
+        "pd_tb": "",
+        "mg_mb": "",
+        "pd_mb": "10px,,0px,",
+        "use_cus_css": false,
+        "code_cus_css": ""
+      }
+    },
     "ecom-wmv-home-home": {
       "type": "ecom-wmv-home-home",
       "settings": {}
     }
   },
   "order": [
+    "promo_text_g4d67g",
     "ecom-wmv-home-home"
   ]
 }
