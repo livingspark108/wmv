@@ -372,7 +372,7 @@
           "announcement_fUk7BV"
         ],
         "settings": {
-          "show_announcement": true,
+          "show_announcement": false,
           "effect": "1",
           "au_time": 0,
           "height": 30,
@@ -381,7 +381,7 @@
           "bg": "#16b33f",
           "bg_op": 100,
           "close": "0",
-          "cl_btn": "#fff",
+          "cl_btn": "#ffffff",
           "version": "1",
           "date": 100
         }
