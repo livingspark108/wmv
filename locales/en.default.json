@@ -3214,10 +3214,6 @@
       "product_single_sale_text_c4jd4bhyqs_html": "{price}% OFF",
       "product_single_sold_text_c4jd4bhyqs_html": "Sold out",
       "product_option_swatch_orqv4hf94lj_html": "Color",
-      "view_more_text_y4meowls6fb_html": "View more",
-      "view_less_text_y4meowls6fb_html": "View less",
-      "view_more_text_io6ti3avunl_html": "View more",
-      "view_less_text_io6ti3avunl_html": "View less",
       "headingtext_c6wg2qd33je_html": "Quantity",
       "add_to_cart_u24rysaeyw9_html": "Add to cart",
       "pre_order_u24rysaeyw9_html": "Pre Order",
@@ -3234,7 +3230,11 @@
       "delivery_text_rbgcrceks8_html": "Order in the next [hour] to get it between [date_start] and [date_end]",
       "hour_rbgcrceks8_html": "hour",
       "delivery_minute_rbgcrceks8_html": "minute(s)",
-      "delivery_hours_rbgcrceks8_html": "hour(s)"
+      "delivery_hours_rbgcrceks8_html": "hour(s)",
+      "view_more_text_y4meowls6fb_html": "View more",
+      "view_less_text_y4meowls6fb_html": "View less",
+      "view_more_text_io6ti3avunl_html": "View more",
+      "view_less_text_io6ti3avunl_html": "View less"
     },
     "ecom-product-details-wmv-product": {
       "breadcrumbs_home_yetmlh1d5m_html": "Home",
