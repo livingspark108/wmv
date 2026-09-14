@@ -69,7 +69,7 @@
  
  {%- endif -%}
  {{ icon_breadcrumbs }}<a class="ecom-base__breadcrumbs__link" href="{{ product.url }}" aria-current="page">{{ product.title }}</a>
- {%- when 'collection' and collection.handle -%}
+ {%- when 'collection' -%}
  {%- if current_tags -%}
  {{ icon_breadcrumbs }}{{ collection.title | link_to: collection.url }}
  {%- capture tag_url -%}{{ collection.url }}/{{ current_tags | join: "+"}}{%- endcapture -%}
@@ -166,4 +166,13 @@
  }
  ]
 }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "{%- when 'collection' and collection.handle -%}"
+  to: "{%- when 'collection' -%}"
+  position: 4875..4900
+{%- endcomment -%}
