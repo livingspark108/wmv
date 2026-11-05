@@ -30,6 +30,11 @@
       "block_order": [
         "judge_me_reviews_review_widget_EJkYPG"
       ],
+      "custom_css": [
+        ".jdgm-star{color:#fdc709!important}",
+        ".jdgm-write-rev-link,.jdgm-btn--solid{background:#fdc709!important;border-color:#fdc709!important;color:#0b1b33!important}",
+        ".jdgm-rev-widg__title{color:#00367c!important}"
+      ],
       "settings": {}
     }
   },
